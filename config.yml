@@ -1,0 +1,9 @@
+title: Satwik Shreshth
+email: satwikshreshth2002@gmail.com
+description: >
+  Software Developer and MCA student at Sikkim University.
+baseurl: ""
+url: "https://satwik-shreshth.github.io"
+
+markdown: kramdown
+theme: minima

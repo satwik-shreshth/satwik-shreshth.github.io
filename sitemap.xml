@@ -1,0 +1,15 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ site.url }}/</loc></url>
+  <url><loc>{{ site.url }}/education/</loc></url>
+  <url><loc>{{ site.url }}/skills/</loc></url>
+  <url><loc>{{ site.url }}/certifications/</loc></url>
+  <url><loc>{{ site.url }}/projects/</loc></url>
+  <url><loc>{{ site.url }}/experience/</loc></url>
+  <url><loc>{{ site.url }}/cv/</loc></url>
+  <url><loc>{{ site.url }}/contact/</loc></url>
+</urlset>
