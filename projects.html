@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Satwik Shreshth</title>
+  <meta name="description"
+    content="Projects by Satwik Shreshth - 4G LTE Communication, U-Net CNN, Satellite Classification, and more.">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <div class="bg-animation">
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Satwik Shreshth</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="education.html" class="nav-link">Education</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+        <li><a href="cv.html" class="nav-link">CV</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h1 class="page-title animate-on-scroll">Featured Projects</h1>
+
+    <!-- Filters -->
+    <div class="projects-filters animate-on-scroll" id="projectFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+      <button class="filter-btn" data-filter="ml">ML / Deep Learning</button>
+      <button class="filter-btn" data-filter="remote-sensing">Remote Sensing</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- FEATURED: CSIR-CMERI -->
+      <div class="project-card featured animate-on-scroll" data-types="iot,featured">
+        <span class="project-badge">🔬 Current Research</span>
+        <h3 class="project-title">4G LTE Communication System for Environmental Monitoring</h3>
+        <p class="project-meta" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+          <i class="fas fa-building"></i> CSIR-CMERI | Jan 2026 – Present
+        </p>
+        <p class="project-desc">
+          Architecting 4G LTE system for real-time environmental monitoring. Achieving <50ms latency, 98%+ stability,
+            processing 1000+ sensor points/sec. </p>
+            <div class="project-tech">
+              <span class="tech-badge">4G LTE</span>
+              <span class="tech-badge">Raspberry Pi</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">IoT</span>
+            </div>
+      </div>
+
+      <!-- U-Net Image-to-Sketch -->
+      <div class="project-card animate-on-scroll" data-types="ml">
+        <h3 class="project-title"><i class="fas fa-image"></i> Image-to-Sketch Generation using U-Net CNN</h3>
+        <p class="project-desc">
+          Built U-Net CNN achieving <strong>85%+ SSIM score</strong> with custom MAE-SSIM loss.
+          Deployed <strong>Streamlit app</strong> with <2s inference for real-time sketch generation. </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">U-Net</span>
+              <span class="tech-badge">Streamlit</span>
+            </div>
+      </div>
+
+      <!-- Satellite LULC Classification -->
+      <div class="project-card animate-on-scroll" data-types="ml,remote-sensing">
+        <h3 class="project-title"><i class="fas fa-satellite"></i> Satellite Land Cover Classification</h3>
+        <p class="project-desc">
+          Developed Random Forest classifier with <strong>92% accuracy</strong> across 5 land classes.
+          Processed <strong>500+ km²</strong> using NDVI, NDWI, NDBI spectral indices.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Random Forest</span>
+          <span class="tech-badge">GEE</span>
+        </div>
+      </div>
+
+      <!-- NDWI Water Bodies Mapping -->
+      <div class="project-card animate-on-scroll" data-types="remote-sensing">
+        <h3 class="project-title"><i class="fas fa-water"></i> Water Body Mapping using NDWI</h3>
+        <p class="project-desc">
+          Automated water body detection using Google Earth Engine and Sentinel-2 data.
+          Multi-temporal analysis for tracking seasonal variations.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Google Earth Engine</span>
+          <span class="tech-badge">Sentinel-2</span>
+          <span class="tech-badge">NDWI</span>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="project-card animate-on-scroll" data-types="web">
+        <h3 class="project-title"><i class="fas fa-globe"></i> Interactive Portfolio Website</h3>
+        <p class="project-desc">
+          Responsive multi-page portfolio with glassmorphism UI, dark/light mode,
+          particle animations, and dynamic content rendering.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/satwik-shreshth/Satwik-Portolio" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://satwik-shreshth.github.io/Satwik-Portolio/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© <span id="footerYear"></span> Satwik Shreshth. Built with ♥</p>
+      <div class="footer-links">
+        <a href="https://mail.google.com/mail/?view=cm&to=satwikshreshth2002@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/satwik-shreshth" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+
+  <script>
+    // Project filter functionality
+    document.getElementById('projectFilters').addEventListener('click', (e) => {
+      if (e.target.classList.contains('filter-btn')) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+
+        const filter = e.target.dataset.filter;
+        const cards = document.querySelectorAll('.project-card');
+
+        cards.forEach(card => {
+          const types = card.dataset.types || '';
+          if (filter === 'all' || types.includes(filter)) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+</body>
+
+</html>
