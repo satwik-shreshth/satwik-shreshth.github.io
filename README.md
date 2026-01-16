@@ -97,3 +97,13 @@ Built with ♥ using HTML, CSS & JavaScript
 ---
 
 **Looking for**: Machine Learning Engineer or Software Developer roles where I can architect intelligent solutions and deliver actionable intelligence from complex datasets.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/satwik-shreshth/satwik-shreshth.github.io/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/satwik-shreshth/satwik-shreshth.github.io/output/github-snake.svg">
+  <img alt="GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/satwik-shreshth/satwik-shreshth.github.io/output/github-snake.svg">
+</picture>
+
