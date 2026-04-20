@@ -1,210 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Satwik Shreshth | IoT Enthusiast · Software Developer · ML Engineer</title>
-  <meta name="description"
-    content="Portfolio of Satwik Shreshth - MCA student at Sikkim University specializing in IoT, Machine Learning, Deep Learning, and Software Development.">
-
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Font Awesome -->
+  <title>Satwik Shreshth | Robotics Researcher &middot; ML Engineer</title>
+  <meta name="description" content="Portfolio of Satwik Shreshth, autonomous robotics, embedded AI, and machine learning researcher at Sikkim University and CSIR-CMERI.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-
-  <!-- Animated Background -->
-  <div class="bg-animation">
-    <div class="floating-shapes">
-      <div class="shape"></div>
-      <div class="shape"></div>
-      <div class="shape"></div>
-      <div class="shape"></div>
-      <div class="shape"></div>
-    </div>
-  </div>
-
-  <!-- Header -->
   <header class="header" id="header">
     <nav class="nav">
-      <a href="index.html" class="logo">Satwik Shreshth</a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="education.html" class="nav-link">Education</a></li>
-        <li><a href="skills.html" class="nav-link">Skills</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="experience.html" class="nav-link">Experience</a></li>
-        <li><a href="certifications.html" class="nav-link">Certifications</a></li>
-        <li><a href="cv.html" class="nav-link">CV</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">S</div>
+        Satwik Shreshth
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="education.html" class="nav-link">Education</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="certifications.html" class="nav-link">Certifications</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
   <main>
-    <!-- Hero Section -->
+    <!-- ===== HERO ===== -->
     <section class="hero" id="home">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
       <div class="hero-content">
-        <!-- Image Side -->
-        <div class="hero-image-container">
-          <div class="profile-ring">
-            <img src="satwik1.JPG" alt="Satwik Shreshth" class="profile-image">
+        <div class="hero-photo-container animate-on-scroll">
+          <img src="satwik1.jpg" alt="Satwik Shreshth" class="hero-photo">
+        </div>
+        <h1 class="hero-title animate-on-scroll">
+          <span class="hero-name-cursive">Satwik Shreshth</span>
+        </h1>
+        <div class="hero-role-wrapper animate-on-scroll">
+          <span class="hero-role-text" id="roleText"></span>
+        </div>
+
+        <div class="hero-stats animate-on-scroll">
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
           </div>
-          <div class="hero-pills">
-            <span class="hero-pill">💻 Software Developer</span>
-            <span class="hero-pill">📡 IoT Enthusiast</span>
-            <span class="hero-pill">🤖 ML Engineer</span>
+          <div class="stat-card">
+            <div class="stat-number" data-target="10000" data-suffix="+" data-display="10K+">0</div>
+            <div class="stat-label">Candidates Served</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3" data-suffix="">0</div>
+            <div class="stat-label">NPTEL Certs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="500" data-suffix="+">0</div>
+            <div class="stat-label">NSS Hours</div>
           </div>
         </div>
 
-        <!-- Text Side -->
-        <div class="hero-text">
-          <p class="hero-kicker">MCA Final Year @ Sikkim University</p>
-          <h1 class="hero-title">Satwik Shreshth</h1>
-          <p class="hero-subtitle">
-            <span id="typingText">Software Developer</span><span class="typing-cursor"></span>
-          </p>
-
-          <!-- Stats -->
-          <div class="hero-stats">
-            <div class="stat-item animate-on-scroll">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat-item animate-on-scroll">
-              <span class="stat-number">10K+</span>
-              <span class="stat-label">Candidates Served</span>
-            </div>
-            <div class="stat-item animate-on-scroll">
-              <span class="stat-number">3</span>
-              <span class="stat-label">NPTEL Certs</span>
-            </div>
-            <div class="stat-item animate-on-scroll">
-              <span class="stat-number">500+</span>
-              <span class="stat-label">NSS Hours</span>
-            </div>
-          </div>
-
-          <!-- CTA Buttons -->
-          <div class="cta-buttons">
-            <a href="projects.html" class="btn btn-primary">
-              <i class="fas fa-rocket"></i> View Projects
-            </a>
-            <a href="contact.html" class="btn btn-secondary">
-              <i class="fas fa-envelope"></i> Let's Connect
-            </a>
-            <a href="https://drive.google.com/file/d/1sdHgsESYm2Mv9W3yIZSWyvpujwnDba9c/view?usp=sharing" target="_blank"
-              class="btn btn-secondary">
-              <i class="fas fa-file-pdf"></i> Resume
-            </a>
-          </div>
-
-          <!-- Current Research Banner -->
-          <div class="current-research animate-on-scroll">
-            <h3>🔬 Current Research @ CSIR-CMERI</h3>
-            <p><strong>4G LTE Protocol-Based Communication System for Environmental Monitoring</strong></p>
-            <ul>
-              <li>
-                <50ms latency, 95%+ throughput efficiency</li>
-              <li>Processing 1000+ sensor data points per second</li>
-              <li>98%+ signal stability across 50+ scenarios</li>
-            </ul>
-          </div>
+        <div class="hero-actions animate-on-scroll" style="margin-top:36px;">
+          <a href="projects.html" class="hero-cta primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="contact.html" class="hero-cta">
+            <i class="fas fa-envelope"></i> Let's Connect
+          </a>
+          <a href="https://drive.google.com/file/d/1Y8gi8fKD2gJo7ArVtzAvBDyys5FSHErH/view?usp=sharing" target="_blank" class="hero-cta">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- ===== FLOATING CARDS MARQUEE ===== -->
+    <section class="floating-cards-section">
+      <div class="marquee-track" id="marqueeTrack">
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-robot"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Autonomous Environmental Monitoring Robot</div>
+            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-chart-line"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Manual vs Autonomous Navigation Study</div>
+            <div class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Robotics</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-microchip"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">ML-Augmented PID Control</div>
+            <div class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control Theory</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-car"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Tripathagamini-S Auto / 4 Version Evolution</div>
+            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-eye"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">YOLO Path Segmentation &amp; Optimization</div>
+            <div class="float-card-tags"><span class="float-card-tag">Computer Vision</span><span class="float-card-tag">ONNX</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-wind"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Smart Environment Monitor / ML IoT</div>
+            <div class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-shield-alt"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Adversarial Robustness / FGSM &amp; PGD</div>
+            <div class="float-card-tags"><span class="float-card-tag">Deep Learning</span><span class="float-card-tag">Security</span></div>
+          </div>
+        </a>
+        <!-- Duplicate for seamless loop -->
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-robot"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Autonomous Environmental Monitoring Robot</div>
+            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-chart-line"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Manual vs Autonomous Navigation Study</div>
+            <div class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Robotics</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-microchip"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">ML-Augmented PID Control</div>
+            <div class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control Theory</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-car"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Tripathagamini-S Auto / 4 Version Evolution</div>
+            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-eye"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">YOLO Path Segmentation &amp; Optimization</div>
+            <div class="float-card-tags"><span class="float-card-tag">Computer Vision</span><span class="float-card-tag">ONNX</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-wind"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Smart Environment Monitor / ML IoT</div>
+            <div class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="float-card">
+          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-shield-alt"></i></span></div>
+          <div class="float-card-overlay">
+            <div class="float-card-title">Adversarial Robustness / FGSM &amp; PGD</div>
+            <div class="float-card-tags"><span class="float-card-tag">Deep Learning</span><span class="float-card-tag">Security</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
     <section class="section" id="about">
-      <h2 class="page-title animate-on-scroll">About Me</h2>
+      <div class="animate-on-scroll" style="text-align:center; margin-bottom:48px;">
+        <span class="section-label">About Me</span>
+        <h2 class="page-title">Building Intelligent Machines</h2>
+        <p class="page-subtitle">Autonomous robotics researcher and ML engineer working at the intersection of control theory, computer vision, and embedded AI.</p>
+      </div>
 
-      <div class="glass-card animate-on-scroll" style="max-width: 900px; margin: 0 auto;">
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 20px;">
-          I am a <strong>Master of Computer Applications</strong> candidate at <strong>Sikkim University</strong>,
-          specializing in machine learning, deep learning, and IoT systems. My work centers on architecting
-          intelligent solutions for environmental monitoring, image processing, and automated analytics.
+      <div class="glass-card animate-on-scroll" style="max-width:860px; margin:0 auto;">
+        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:18px;">
+          I am a final-year Master of Computer Applications candidate at <strong style="color:var(--text)">Sikkim University</strong> with research affiliation at <strong style="color:var(--text)">CSIR-CMERI's Micro Robotics Laboratory, Durgapur</strong>. My work spans autonomous mobile robotics, embedded AI, and machine learning, from designing control systems grounded in classical control theory to deploying deep learning models on resource-constrained hardware.
+        </p>
+        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:18px;">
+          At CSIR-CMERI, I developed the <strong style="color:var(--text)">Tripathagamini-S series</strong>, a four-version autonomous line-following robot evolving from YOLO vision-guided navigation to a hybrid ML + PID architecture achieving 99.6% tracking accuracy and 97.9% error energy reduction.
+        </p>
+        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:28px;">
+          My technical focus is at the intersection of <strong style="color:var(--text)">control theory, computer vision, and machine learning</strong>, building systems that are theoretically grounded, practically deployable on embedded hardware, and rigorously validated through statistical analysis.
         </p>
 
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 24px;">
-          Currently, I am engineering a <strong>4G LTE-based communication system at CSIR-CMERI</strong> for
-          real-time environmental monitoring across vehicular networks—encompassing system architecture design,
-          performance optimization, and resilient data pipeline construction for IoT applications.
-        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px;">
+          <div style="flex:1; min-width:200px;">
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-2); margin-bottom:10px;">Core Expertise</p>
+            <p style="font-size:0.85rem; color:var(--text-2); line-height:1.7;">Autonomous Navigation &middot; Embedded AI &middot; PID &amp; Hybrid Control &middot; Computer Vision &middot; IoT Systems &middot; Statistical Analysis</p>
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-2); margin-bottom:10px;">Tech Stack</p>
+            <p style="font-size:0.85rem; color:var(--text-2); line-height:1.7;">Raspberry Pi &middot; Arduino &middot; ESP32 &middot; 4G Module &middot; YOLO / ONNX &middot; PyTorch &middot; Flask &middot; Firebase &middot; MATLAB &middot; Google Earth Engine</p>
+          </div>
+        </div>
 
-        <h4 style="color: var(--accent); margin-bottom: 12px; font-size: 1.1rem;">🎯 Expertise</h4>
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 24px;">
-          I architect end-to-end machine learning solutions—from training sophisticated neural networks and
-          processing satellite imagery to deploying production-grade applications. My technical arsenal spans
-          <strong>Python, TensorFlow/Keras, Google Earth Engine, QGIS</strong>, and IoT ecosystems including
-          <strong>Raspberry Pi and LTE protocols</strong>.
-        </p>
-
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 24px;">
-          My experience orchestrating mission-critical infrastructure at <strong>C-DAC ATC Delhi</strong> for
-          nationwide examinations and developing geospatial workflows at <strong>India Space Academy</strong>
-          has honed my ability to build scalable systems that perform under demanding conditions.
-        </p>
-
-        <h4 style="color: var(--accent); margin-bottom: 12px; font-size: 1.1rem;">💡 Impact</h4>
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 24px;">
-          I have architected <strong>U-Net-based image transformation models</strong>, automated
-          <strong>land cover classification frameworks</strong>, and <strong>water body monitoring
-            solutions</strong>—each
-          translating computational theory into production-ready implementations addressing real-world challenges.
-        </p>
-
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem; margin-bottom: 24px;">
-          As <strong>Vice Chairperson of SUSA's Cultural Committee</strong> and NSS volunteer, I have cultivated
-          leadership and cross-functional collaboration skills that complement my technical expertise.
-        </p>
-
-        <h4 style="color: var(--accent); margin-bottom: 12px; font-size: 1.1rem;">🚀 Vision</h4>
-        <p style="color: var(--text-secondary); line-height: 1.9; font-size: 1.02rem;">
-          I am pursuing <strong>Machine Learning Engineer</strong> or <strong>Software Developer</strong> roles
-          where I can leverage computational methodologies to engineer systems that extract meaningful patterns
-          from complex datasets and deliver actionable intelligence.
-        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="projects.html" class="btn btn-primary" style="font-size:0.84rem; padding:9px 18px;">
+            <i class="fas fa-folder-open"></i> All Projects
+          </a>
+          <a href="https://github.com/satwik-shreshth" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://huggingface.co/satwikshreshth1" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
+            <i class="fas fa-brain"></i> HuggingFace
+          </a>
+          <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <p>© <span id="footerYear"></span> Satwik Shreshth. Built with ♥ using HTML, CSS & JavaScript.</p>
+      <p>&copy; <span id="footerYear"></span> Satwik Shreshth</p>
       <div class="footer-links">
         <a href="https://mail.google.com/mail/?view=cm&to=satwikshreshth2002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/satwik-shreshth" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" title="LinkedIn"><i
-            class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://wa.me/917260091323" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll to Top -->
-  <button class="scroll-top" id="scrollTop">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- Scripts -->
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
   <script src="script.js"></script>
-
 </body>
-
 </html>
