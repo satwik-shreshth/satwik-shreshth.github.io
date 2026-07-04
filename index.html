@@ -3,252 +3,401 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Satwik Shreshth | Robotics Researcher &middot; ML Engineer</title>
-  <meta name="description" content="Portfolio of Satwik Shreshth, autonomous robotics, embedded AI, and machine learning researcher at Sikkim University and CSIR-CMERI.">
+  <title>Satwik Shreshth | Machine Learning Engineer, Computer Vision, Remote Sensing</title>
+  <meta name="description" content="Satwik Shreshth is a Machine Learning Engineer working in computer vision, remote sensing, embedded AI, and autonomous robotics, with research experience at CSIR-CMERI.">
+  <meta name="author" content="Satwik Shreshth">
+  <link rel="canonical" href="https://satwik-shreshth.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Satwik Shreshth | Machine Learning Engineer">
+  <meta property="og:description" content="Machine Learning Engineer working in computer vision, remote sensing, embedded AI, and autonomous robotics.">
+  <meta property="og:url" content="https://satwik-shreshth.github.io/">
+  <meta property="og:image" content="https://satwik-shreshth.github.io/satwik1-opt.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230F766E'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rouge+Script&family=Sora:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Satwik Shreshth",
+    "url": "https://satwik-shreshth.github.io/",
+    "image": "https://satwik-shreshth.github.io/satwik1-opt.jpg",
+    "jobTitle": "Machine Learning Engineer",
+    "email": "mailto:satwikshreshth2002@gmail.com",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Sikkim University" },
+      { "@type": "CollegeOrUniversity", "name": "Magadh University" }
+    ],
+    "knowsAbout": ["Machine Learning", "Computer Vision", "Remote Sensing", "Embedded AI", "Robotics", "IoT"],
+    "sameAs": [
+      "https://github.com/satwik-shreshth",
+      "https://www.linkedin.com/in/satwik-shreshth-5310372b7",
+      "https://huggingface.co/satwikshreshth1",
+      "https://www.kaggle.com/satwikshreshth01"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="cursor-glow" id="cursorGlow"></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading">
+    <div class="loader-mark" aria-hidden="true">S</div>
+    <div class="loader-bar" aria-hidden="true"></div>
+  </div>
 
   <header class="header" id="header">
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">S</div>
-        Satwik Shreshth
-      </a>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">S</span>Satwik Shreshth</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+      </div>
     </nav>
   </header>
 
-  <div class="mobile-nav-overlay" id="mobileNav">
-    <a href="index.html" class="nav-link active">Home</a>
-    <a href="education.html" class="nav-link">Education</a>
-    <a href="skills.html" class="nav-link">Skills</a>
+  <nav class="mobile-nav-overlay" id="mobileNav" aria-label="Mobile">
+    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
     <a href="projects.html" class="nav-link">Projects</a>
+    <a href="skills.html" class="nav-link">Skills</a>
     <a href="experience.html" class="nav-link">Experience</a>
-    <a href="certifications.html" class="nav-link">Certifications</a>
+    <a href="education.html" class="nav-link">Education</a>
+    <a href="achievements.html" class="nav-link">Achievements</a>
     <a href="cv.html" class="nav-link">CV</a>
     <a href="contact.html" class="nav-link">Contact</a>
-  </div>
+  </nav>
 
-  <main>
+  <main id="main">
     <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="orb orb-4"></div>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+
       <div class="hero-content">
-        <div class="hero-photo-container animate-on-scroll">
-          <img src="satwik1.jpg" alt="Satwik Shreshth" class="hero-photo">
-        </div>
-        <h1 class="hero-title animate-on-scroll">
-          <span class="hero-name-cursive">Satwik Shreshth</span>
-        </h1>
-        <div class="hero-role-wrapper animate-on-scroll">
-          <span class="hero-role-text" id="roleText"></span>
+        <div class="hero-photo-wrap animate-on-scroll">
+          <img src="satwik1-opt.jpg" alt="Portrait of Satwik Shreshth" class="hero-photo" width="148" height="148" fetchpriority="high">
+          <span class="hero-status" title="Open to opportunities" aria-hidden="true"></span>
         </div>
 
-        <div class="hero-stats animate-on-scroll">
+        <p class="hero-kicker animate-on-scroll"><span class="dot" aria-hidden="true"></span> Open to ML · AI · Research Engineering roles</p>
+
+        <h1 class="hero-title gradient-text animate-on-scroll">Satwik Shreshth</h1>
+
+        <p class="hero-role animate-on-scroll" aria-label="Machine Learning Engineer, Computer Vision, Remote Sensing, Embedded AI, Robotics">
+          <span class="role-text" id="roleText"></span><span class="role-cursor" aria-hidden="true"></span>
+        </p>
+
+		<p class="hero-intro animate-on-scroll" style="text-align: justify; hyphens: auto; max-width: 700px;">
+    I hold a Master of Computer Applications from Sikkim University, where my work took shape at the 
+    intersection of machine learning and the physical world. 
+    I have been drawn to systems that do not simply process data in the abstract, 
+    but engage with hardware, sensors, and environments directly, learning to interpret and respond to
+    conditions as they actually exist. This interest has carried across different problem spaces, 
+    from intelligent, resource-constrained computing to the analysis of complex natural landscapes, 
+    and it continues to shape how I think about building systems that hold up under real-world 
+    uncertainty rather than idealized conditions.
+</p>
+
+        <div class="hero-actions animate-on-scroll">
+          <a href="https://drive.google.com/file/d/1pLncGSAOg9lxIdybxG_zSaB_3zlbld9j/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-download" aria-hidden="true"></i> Download Resume</a>
+          <a href="projects.html" class="btn"><i class="fas fa-rocket" aria-hidden="true"></i> View Projects</a>
+          <a href="contact.html" class="btn"><i class="fas fa-envelope" aria-hidden="true"></i> Contact Me</a>
+          <a href="https://github.com/satwik-shreshth" target="_blank" rel="noopener" class="btn" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" rel="noopener" class="btn" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+
+        <div class="hero-tech animate-on-scroll" aria-label="Core technologies">
+          <span class="hero-tech-icon" title="Python"><i class="fab fa-python" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Machine Learning"><i class="fas fa-brain" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Computer Vision"><i class="fas fa-eye" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Remote Sensing"><i class="fas fa-satellite" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Robotics"><i class="fas fa-robot" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Embedded Systems"><i class="fas fa-microchip" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Raspberry Pi"><i class="fab fa-raspberry-pi" aria-hidden="true"></i></span>
+          <span class="hero-tech-icon" title="Cloud & IoT"><i class="fas fa-cloud" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="stats-row animate-on-scroll">
           <div class="stat-card">
-            <div class="stat-number" data-target="5" data-suffix="+">0</div>
-            <div class="stat-label">Projects</div>
+            <div class="stat-number" data-target="13" data-suffix="+">0</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="22" data-suffix="">0</div>
+            <div class="stat-label">Models Benchmarked</div>
           </div>
           <div class="stat-card">
             <div class="stat-number" data-target="10000" data-suffix="+" data-display="10K+">0</div>
             <div class="stat-label">Candidates Served</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number" data-target="3" data-suffix="">0</div>
-            <div class="stat-label">NPTEL Certs</div>
-          </div>
-          <div class="stat-card">
             <div class="stat-number" data-target="500" data-suffix="+">0</div>
-            <div class="stat-label">NSS Hours</div>
+            <div class="stat-label">NSS Service Hours</div>
           </div>
-        </div>
-
-        <div class="hero-actions animate-on-scroll" style="margin-top:36px;">
-          <a href="projects.html" class="hero-cta primary">
-            <i class="fas fa-rocket"></i> View Projects
-          </a>
-          <a href="contact.html" class="hero-cta">
-            <i class="fas fa-envelope"></i> Let's Connect
-          </a>
-          <a href="https://drive.google.com/file/d/1Y8gi8fKD2gJo7ArVtzAvBDyys5FSHErH/view?usp=sharing" target="_blank" class="hero-cta">
-            <i class="fas fa-file-pdf"></i> Resume
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== FLOATING CARDS MARQUEE ===== -->
-    <section class="floating-cards-section">
+    <!-- ===== PROJECT MARQUEE ===== -->
+    <section class="marquee-section" aria-label="Featured project highlights">
       <div class="marquee-track" id="marqueeTrack">
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-robot"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Autonomous Environmental Monitoring Robot</div>
-            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-satellite" aria-hidden="true"></i></span>
+          <span class="float-card-title">LULC Classification: 22-Model Benchmark, East Sikkim</span>
+          <span class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Remote Sensing</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-chart-line"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Manual vs Autonomous Navigation Study</div>
-            <div class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Robotics</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-robot" aria-hidden="true"></i></span>
+          <span class="float-card-title">Mobile Environmental Monitoring Framework</span>
+          <span class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-microchip"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">ML-Augmented PID Control</div>
-            <div class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control Theory</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-microchip" aria-hidden="true"></i></span>
+          <span class="float-card-title">ML-Augmented PID Control</span>
+          <span class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-car"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Tripathagamini-S Auto / 4 Version Evolution</div>
-            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-car" aria-hidden="true"></i></span>
+          <span class="float-card-title">Tripathagamini-S: Autonomous Robot in 4 Versions</span>
+          <span class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-eye"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">YOLO Path Segmentation &amp; Optimization</div>
-            <div class="float-card-tags"><span class="float-card-tag">Computer Vision</span><span class="float-card-tag">ONNX</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-eye" aria-hidden="true"></i></span>
+          <span class="float-card-title">YOLO Edge Optimization on Raspberry Pi</span>
+          <span class="float-card-tags"><span class="float-card-tag">Vision</span><span class="float-card-tag">ONNX</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-wind"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Smart Environment Monitor / ML IoT</div>
-            <div class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-wind" aria-hidden="true"></i></span>
+          <span class="float-card-title">Smart Environment Monitor: ML IoT Pipeline</span>
+          <span class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></span>
         </a>
         <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-shield-alt"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Adversarial Robustness / FGSM &amp; PGD</div>
-            <div class="float-card-tags"><span class="float-card-tag">Deep Learning</span><span class="float-card-tag">Security</span></div>
-          </div>
+          <span class="float-card-icon"><i class="fas fa-image" aria-hidden="true"></i></span>
+          <span class="float-card-title">Image-to-Sketch with U-Net CNN</span>
+          <span class="float-card-tags"><span class="float-card-tag">Deep Learning</span></span>
         </a>
-        <!-- Duplicate for seamless loop -->
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-robot"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Autonomous Environmental Monitoring Robot</div>
-            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></div>
-          </div>
+        <!-- Duplicate set for seamless loop -->
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-satellite"></i></span>
+          <span class="float-card-title">LULC Classification: 22-Model Benchmark, East Sikkim</span>
+          <span class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Remote Sensing</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-chart-line"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Manual vs Autonomous Navigation Study</div>
-            <div class="float-card-tags"><span class="float-card-tag">Research</span><span class="float-card-tag">Robotics</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-robot"></i></span>
+          <span class="float-card-title">Mobile Environmental Monitoring Framework</span>
+          <span class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">IoT</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-microchip"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">ML-Augmented PID Control</div>
-            <div class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control Theory</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-microchip"></i></span>
+          <span class="float-card-title">ML-Augmented PID Control</span>
+          <span class="float-card-tags"><span class="float-card-tag">ML</span><span class="float-card-tag">Control</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-car"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Tripathagamini-S Auto / 4 Version Evolution</div>
-            <div class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-car"></i></span>
+          <span class="float-card-title">Tripathagamini-S: Autonomous Robot in 4 Versions</span>
+          <span class="float-card-tags"><span class="float-card-tag">Robotics</span><span class="float-card-tag">ML</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-eye"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">YOLO Path Segmentation &amp; Optimization</div>
-            <div class="float-card-tags"><span class="float-card-tag">Computer Vision</span><span class="float-card-tag">ONNX</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-eye"></i></span>
+          <span class="float-card-title">YOLO Edge Optimization on Raspberry Pi</span>
+          <span class="float-card-tags"><span class="float-card-tag">Vision</span><span class="float-card-tag">ONNX</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-wind"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Smart Environment Monitor / ML IoT</div>
-            <div class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-wind"></i></span>
+          <span class="float-card-title">Smart Environment Monitor: ML IoT Pipeline</span>
+          <span class="float-card-tags"><span class="float-card-tag">IoT</span><span class="float-card-tag">ML</span></span>
         </a>
-        <a href="projects.html" class="float-card">
-          <div class="float-card-img"><span class="project-img-icon"><i class="fas fa-shield-alt"></i></span></div>
-          <div class="float-card-overlay">
-            <div class="float-card-title">Adversarial Robustness / FGSM &amp; PGD</div>
-            <div class="float-card-tags"><span class="float-card-tag">Deep Learning</span><span class="float-card-tag">Security</span></div>
-          </div>
+        <a href="projects.html" class="float-card" aria-hidden="true" tabindex="-1">
+          <span class="float-card-icon"><i class="fas fa-image"></i></span>
+          <span class="float-card-title">Image-to-Sketch with U-Net CNN</span>
+          <span class="float-card-tags"><span class="float-card-tag">Deep Learning</span></span>
         </a>
       </div>
     </section>
 
     <!-- ===== ABOUT ===== -->
-    <section class="section" id="about">
-      <div class="animate-on-scroll" style="text-align:center; margin-bottom:48px;">
+    <section class="section" id="about" aria-label="About me">
+      <div class="section-head animate-on-scroll">
         <span class="section-label">About Me</span>
-        <h2 class="page-title">Building Intelligent Machines</h2>
-        <p class="page-subtitle">Autonomous robotics researcher and ML engineer working at the intersection of control theory, computer vision, and embedded AI.</p>
+        <h2 class="page-title gradient-text">Building Intelligent Systems</h2>
+        <p class="page-subtitle">Machine Learning and Research Engineer working across computer vision, remote sensing, embedded systems, and autonomous robotics.</p>
       </div>
 
-      <div class="glass-card animate-on-scroll" style="max-width:860px; margin:0 auto;">
-        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:18px;">
-          I am a final-year Master of Computer Applications candidate at <strong style="color:var(--text)">Sikkim University</strong> with research affiliation at <strong style="color:var(--text)">CSIR-CMERI's Micro Robotics Laboratory, Durgapur</strong>. My work spans autonomous mobile robotics, embedded AI, and machine learning, from designing control systems grounded in classical control theory to deploying deep learning models on resource-constrained hardware.
-        </p>
-        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:18px;">
-          At CSIR-CMERI, I developed the <strong style="color:var(--text)">Tripathagamini-S series</strong>, a four-version autonomous line-following robot evolving from YOLO vision-guided navigation to a hybrid ML + PID architecture achieving 99.6% tracking accuracy and 97.9% error energy reduction.
-        </p>
-        <p style="color:var(--text-2); line-height:1.85; font-size:0.97rem; margin-bottom:28px;">
-          My technical focus is at the intersection of <strong style="color:var(--text)">control theory, computer vision, and machine learning</strong>, building systems that are theoretically grounded, practically deployable on embedded hardware, and rigorously validated through statistical analysis.
-        </p>
+    <div class="glass-card animate-on-scroll" style="max-width:880px; margin:0 auto;">
+  <p style="color:var(--text-2); line-height:1.85; margin-bottom:16px; text-align:justify; hyphens:auto;">
+    I am a Machine Learning and Research Engineer. I completed my
+    <strong>Master of Computer Applications at Sikkim University</strong> (final result awaited)
+    and carried out my dissertation research at <strong>CSIR-CMERI's Micro Robotics Laboratory in Durgapur</strong>.
+    My work covers the full life cycle of applied AI, from data collection and model design through to
+    statistically validated deployment on resource-constrained hardware.
+  </p>
+  <p style="color:var(--text-2); line-height:1.85; margin-bottom:16px; text-align:justify; hyphens:auto;">
+    At CSIR-CMERI I developed the <strong>Tripathagamini-S series</strong>, a four-version
+    autonomous robot that grew from YOLO vision-guided navigation into a hybrid ML and PID architecture
+    with <strong>99.6% tracking accuracy</strong>. My flagship research benchmarks
+    <strong>22 machine learning and deep learning models</strong> for land use / land cover
+    classification over East Sikkim using Sentinel-1, Sentinel-2, and SRTM data.
+  </p>
+  <p style="color:var(--text-2); line-height:1.85; text-align:justify; hyphens:auto;">
+    I like systems that hold up outside the lab. In practice that has meant proving Lyapunov stability
+    for a controller before trusting it, getting real-time inference out of a Raspberry Pi CPU, and
+    running 5-fold cross-validation on a custom transformer before quoting its numbers.
+  </p>
+</div>
 
-        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px;">
-          <div style="flex:1; min-width:200px;">
-            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-2); margin-bottom:10px;">Core Expertise</p>
-            <p style="font-size:0.85rem; color:var(--text-2); line-height:1.7;">Autonomous Navigation &middot; Embedded AI &middot; PID &amp; Hybrid Control &middot; Computer Vision &middot; IoT Systems &middot; Statistical Analysis</p>
-          </div>
-          <div style="flex:1; min-width:200px;">
-            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-2); margin-bottom:10px;">Tech Stack</p>
-            <p style="font-size:0.85rem; color:var(--text-2); line-height:1.7;">Raspberry Pi &middot; Arduino &middot; ESP32 &middot; 4G Module &middot; YOLO / ONNX &middot; PyTorch &middot; Flask &middot; Firebase &middot; MATLAB &middot; Google Earth Engine</p>
+      <div class="about-grid">
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>End-to-end ML across classical models, gradient boosting, deep networks, and transformers, tuned with Optuna and benchmarked under rigorous cross-validation.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+          <h3>Computer Vision</h3>
+          <p>YOLO detection and instance segmentation, OpenCV pipelines, homography-based tracking, and ONNX-optimized real-time inference on edge devices.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-satellite" aria-hidden="true"></i></div>
+          <h3>Remote Sensing</h3>
+          <p>Multi-source satellite analytics with Sentinel-1 SAR, Sentinel-2 optical, and SRTM terrain data through Google Earth Engine and QGIS workflows.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+          <h3>Embedded AI</h3>
+          <p>Deep learning deployed where it is hardest: quantized, ONNX-converted models running in real time on Raspberry Pi, Arduino, and ESP32 hardware.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-tower-broadcast" aria-hidden="true"></i></div>
+          <h3>IoT Systems</h3>
+          <p>Sensor-to-cloud architectures: multi-sensor acquisition, SQLite buffering, and live sync to Firebase and ThingSpeak behind Flask REST APIs.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-flask" aria-hidden="true"></i></div>
+          <h3>Research</h3>
+          <p>Hypothesis-driven experimentation with 40-trial controlled studies, effect sizes (Cohen's d), formal stability proofs, and publication-style reporting.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+          <h3>Robotics</h3>
+          <p>Autonomous navigation with hybrid ML + PID control, differential drive, IR sensor arrays, and vision-guided path following at 100 Hz control rates.</p>
+        </div>
+        <div class="about-tile animate-on-scroll">
+          <div class="about-tile-icon"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></div>
+          <h3>Problem Solving</h3>
+          <p>Comfortable owning ambiguous problems end to end: decomposing them, prototyping fast, and iterating against measurable success criteria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTS AT A GLANCE ===== -->
+    <section class="section" style="padding-top:0;" aria-label="Research results">
+      <div class="section-head animate-on-scroll">
+        <span class="section-label">Evidence</span>
+        <h2 class="page-title gradient-text">Results at a Glance</h2>
+        <p class="page-subtitle">Real charts from real experiments. Click any figure to view it full size.</p>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card animate-on-scroll">
+          <a href="assets/lulc22-grouped-metrics.png" class="gallery-thumb" data-gallery="home-highlights" data-caption="OA, Kappa, and Macro-F1 for all 22 benchmarked models — Random Forest leads at 93.44% OA"><img src="assets/lulc22-grouped-metrics.png" alt="Grouped metrics chart for all 22 LULC models" loading="lazy"></a>
+          <div class="highlight-body">
+            <span class="highlight-stat">93.44% OA</span>
+            <span class="highlight-title">22-Model LULC Benchmark</span>
+            <p class="highlight-desc">Publication-style comparison of 22 ML, DL, and transformer models on Himalayan land cover classification from Sentinel-1, Sentinel-2, and SRTM data.</p>
+            <a href="projects.html" class="highlight-link">See the research <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
+        <div class="highlight-card animate-on-scroll">
+          <a href="assets/nav-trajectories.png" class="gallery-thumb" data-gallery="home-highlights" data-caption="All 40 trial trajectories: 20 manual (spread wide) vs 20 autonomous (tight on the path)"><img src="assets/nav-trajectories.png" alt="Trajectories of 40 navigation trials, manual versus autonomous" loading="lazy"></a>
+          <div class="highlight-body">
+            <span class="highlight-stat">87.4% RMSE ↓</span>
+            <span class="highlight-title">Autonomous vs Manual Navigation</span>
+            <p class="highlight-desc">40-trial controlled study at CSIR-CMERI: YOLO + PID autonomy cut tracking error from 16.77 cm to 2.12 cm with Cohen's d = 8.944.</p>
+            <a href="projects.html" class="highlight-link">See the study <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <a href="assets/trip-accuracy-proof.png" class="gallery-thumb" data-gallery="home-highlights" data-caption="99.6% of control samples fall inside the target error band with the hybrid ML + PID controller"><img src="assets/trip-accuracy-proof.png" alt="Accuracy verification chart of the hybrid ML plus PID controller" loading="lazy"></a>
+          <div class="highlight-body">
+            <span class="highlight-stat">99.6% In-Band</span>
+            <span class="highlight-title">Hybrid ML + PID Control</span>
+            <p class="highlight-desc">Random Forest residual predictor layered on a PID loop, trained on 208,983 time steps, with Lyapunov stability formally proven.</p>
+            <a href="projects.html" class="highlight-link">See the robot <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a href="projects.html" class="btn btn-primary" style="font-size:0.84rem; padding:9px 18px;">
-            <i class="fas fa-folder-open"></i> All Projects
-          </a>
-          <a href="https://github.com/satwik-shreshth" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="https://huggingface.co/satwikshreshth1" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
-            <i class="fas fa-brain"></i> HuggingFace
-          </a>
-          <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" class="btn btn-secondary" style="font-size:0.84rem; padding:9px 18px;">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
+    <!-- ===== CTA ===== -->
+    <section class="section" style="padding-top:0;" aria-label="Call to action">
+      <div class="cta-band animate-on-scroll">
+        <h2 class="gradient-text">Open to Research and Engineering Roles</h2>
+        <p>I am currently seeking positions in Machine Learning, Computer Vision, Remote Sensing, and Research Engineering.</p>
+        <div class="quick-actions">
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in Touch</a>
+          <a href="https://drive.google.com/file/d/1pLncGSAOg9lxIdybxG_zSaB_3zlbld9j/view?usp=sharing" target="_blank" rel="noopener" class="btn"><i class="fas fa-file-pdf" aria-hidden="true"></i> Resume</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; <span id="footerYear"></span> Satwik Shreshth</p>
-      <div class="footer-links">
-        <a href="https://mail.google.com/mail/?view=cm&to=satwikshreshth2002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/satwik-shreshth" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/917260091323" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">S</span>Satwik Shreshth</a>
+          <p>Machine Learning Engineer building intelligent systems across AI, embedded hardware, and geospatial analytics.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Connect</h2>
+          <ul>
+            <li><a href="mailto:satwikshreshth2002@gmail.com">Email</a></li>
+            <li><a href="https://github.com/satwik-shreshth" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://huggingface.co/satwikshreshth1" target="_blank" rel="noopener">HuggingFace</a></li>
+            <li><a href="https://www.kaggle.com/satwikshreshth01" target="_blank" rel="noopener">Kaggle</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Satwik Shreshth. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="mailto:satwikshreshth2002@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/satwik-shreshth" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/917260091323" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
   <script src="script.js"></script>
 </body>
 </html>

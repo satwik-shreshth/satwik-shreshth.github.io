@@ -1,205 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Satwik Shreshth</title>
-  <meta name="description" content="Research projects by Satwik Shreshth spanning autonomous robotics, embedded AI, ML, and remote sensing.">
+  <meta name="description" content="Projects by Satwik Shreshth: a 22-model LULC classification benchmark, autonomous robotics, embedded AI, computer vision, and remote sensing systems.">
+  <meta name="author" content="Satwik Shreshth">
+  <link rel="canonical" href="https://satwik-shreshth.github.io/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Satwik Shreshth">
+  <meta property="og:description" content="Research systems and software in AI, robotics, embedded vision, and geospatial analytics.">
+  <meta property="og:url" content="https://satwik-shreshth.github.io/projects.html">
+  <meta property="og:image" content="https://satwik-shreshth.github.io/satwik1-opt.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230F766E'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" id="header"><nav class="nav">
-    <a href="index.html" class="logo"><div class="logo-icon">S</div>Satwik Shreshth</a>
-    <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
-  </nav></header>
-  <div class="mobile-nav-overlay" id="mobileNav">
-    <a href="index.html" class="nav-link">Home</a><a href="education.html" class="nav-link">Education</a><a href="skills.html" class="nav-link">Skills</a>
-    <a href="projects.html" class="nav-link active">Projects</a><a href="experience.html" class="nav-link">Experience</a><a href="certifications.html" class="nav-link">Certifications</a>
-    <a href="cv.html" class="nav-link">CV</a><a href="contact.html" class="nav-link">Contact</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading">
+    <div class="loader-mark" aria-hidden="true">S</div>
+    <div class="loader-bar" aria-hidden="true"></div>
   </div>
 
-  <main class="section" style="padding-top:calc(var(--nav-h) + 40px);">
-    <div class="animate-on-scroll" style="text-align:center; margin-bottom:40px;">
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">S</span>Satwik Shreshth</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav-overlay" id="mobileNav" aria-label="Mobile">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="education.html" class="nav-link">Education</a>
+    <a href="achievements.html" class="nav-link">Achievements</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main id="main" class="section page-head">
+    <div class="section-head animate-on-scroll">
       <span class="section-label">Portfolio</span>
-      <h1 class="page-title">Projects</h1>
-      <p class="page-subtitle">Research systems, papers, and software spanning autonomous robotics, embedded AI, machine learning, and geospatial analysis.</p>
+      <h1 class="page-title gradient-text">Projects &amp; Research</h1>
+      <p class="page-subtitle">Research systems, papers, and software, from machine learning and autonomous robotics to embedded vision and geospatial analytics.</p>
     </div>
 
-    <div class="projects-filters animate-on-scroll" id="projectFilters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="robotics">Robotics</button>
-      <button class="filter-btn" data-filter="ml">Machine Learning</button>
-      <button class="filter-btn" data-filter="iot">IoT</button>
-      <button class="filter-btn" data-filter="remote-sensing">Remote Sensing</button>
+    <div class="projects-filters animate-on-scroll" id="projectFilters" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="research" aria-pressed="false">Research</button>
+      <button class="filter-btn" data-filter="robotics" aria-pressed="false">Robotics</button>
+      <button class="filter-btn" data-filter="ml" aria-pressed="false">Machine Learning</button>
+      <button class="filter-btn" data-filter="iot" aria-pressed="false">IoT</button>
+      <button class="filter-btn" data-filter="remote-sensing" aria-pressed="false">Remote Sensing</button>
     </div>
 
     <div class="projects-grid" id="projectsGrid">
 
-      <div class="project-card featured animate-on-scroll" data-types="robotics,iot" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-robot"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge current">MCA Dissertation / CSIR-CMERI</span>
-          <h3 class="project-title">Communication-Integrated Mobile Environmental Monitoring Framework</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> Sikkim University &amp; CSIR-CMERI &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025 - 2026</p>
-          <p class="project-desc">MCA dissertation: unified mobile robotic platform integrating autonomous YOLO-seg navigation (mask mAP@50 = 0.988), ONNX-optimized to <strong>15.4 FPS / 64.8 ms</strong> on Raspberry Pi CPU. PID controller (Kp=13.2, Kd=0.475) achieves <strong>95.37% tracking accuracy</strong> and <strong>87.4% RMSE reduction</strong> over manual teleoperation across 40 trials.</p>
+      <!-- ===== FLAGSHIP RESEARCH ===== -->
+      <article class="research-card animate-on-scroll" data-types="research,ml,remote-sensing">
+        <div class="research-inner">
+          <div class="project-badges">
+            <span class="project-badge gold"><i class="fas fa-star" aria-hidden="true"></i> Flagship Research</span>
+            <span class="project-badge">Remote Sensing × Machine Learning</span>
+            <span class="project-badge green">Best OA 93.44%: Random Forest</span>
+          </div>
+          <h2 class="research-title">Comprehensive Evaluation of Machine Learning and Deep Learning Models for Land Use and Land Cover Classification in East Sikkim</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> East Sikkim, India (~954 km²)</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Multi-temporal imagery, 2019-2024</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="research-abstract">
+            My flagship AI research project: a publication-style benchmark of <strong>22 machine learning,
+            deep learning, transformer, stacking, ensemble, and feature-fusion approaches</strong> for LULC classification
+            over the ecologically sensitive Himalayan district of East Sikkim. The imagery comes from three sources:
+            Sentinel-2 optical, Sentinel-1 SAR, and SRTM topography. Each sample is described by a
+            <strong>24-dimensional feature vector</strong> (spectral bands, indices, SAR backscatter,
+            terrain, and texture) extracted via Google Earth Engine. <strong>Random Forest achieved the
+            best overall accuracy of 93.44%</strong> (Kappa 0.9206, Macro-F1 93.24%).
+          </p>
+
+          <div class="research-columns">
+            <div>
+              <div class="project-metrics">
+                <div class="metric"><div class="metric-value">22</div><div class="metric-label">Models</div></div>
+                <div class="metric"><div class="metric-value">93.44%</div><div class="metric-label">Best OA</div></div>
+                <div class="metric"><div class="metric-value">0.9206</div><div class="metric-label">Kappa</div></div>
+                <div class="metric"><div class="metric-value">24</div><div class="metric-label">Features</div></div>
+                <div class="metric"><div class="metric-value">10,530</div><div class="metric-label">Samples</div></div>
+                <div class="metric"><div class="metric-value">6</div><div class="metric-label">LULC Classes</div></div>
+              </div>
+              <div class="project-tech" style="margin-top:14px;">
+                <span class="tech-badge">Sentinel-1 SAR</span><span class="tech-badge">Sentinel-2</span><span class="tech-badge">SRTM</span>
+                <span class="tech-badge">Google Earth Engine</span><span class="tech-badge">PyTorch</span><span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">XGBoost / LightGBM / CatBoost</span><span class="tech-badge">Transformers</span><span class="tech-badge">Kaggle GPU</span>
+              </div>
+            </div>
+            <div class="research-diagram">
+              <img src="assets/lulc22-overall-accuracy.png" alt="Bar chart comparing overall accuracy of all 22 models, with Random Forest highest at 93.44%" loading="lazy">
+              <span class="pipeline-steps">
+                <span class="pipeline-step">S1 + S2 + SRTM</span>
+                <span class="pipeline-step">GEE Feature Extraction (24-D)</span>
+                <span class="pipeline-step">22-Model Zoo</span>
+                <span class="pipeline-step">5-Fold CV</span>
+                <span class="pipeline-step">LULC Maps</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery — click to enlarge</span>
+            <div class="gallery-strip">
+              <a href="assets/lulc22-grouped-metrics.png" class="gallery-thumb" data-gallery="lulc22" data-caption="OA, Kappa, and Macro-F1 for all 22 models, grouped by metric"><img src="assets/lulc22-grouped-metrics.png" alt="Grouped bar chart of overall accuracy, Kappa, and Macro-F1 for all 22 models" loading="lazy"></a>
+              <a href="assets/lulc22-ranking-table.png" class="gallery-thumb" data-gallery="lulc22" data-caption="Publication-style ranking table of all 22 models with OA, Kappa, and Macro-F1"><img src="assets/lulc22-ranking-table.png" alt="Ranking table of all 22 models" loading="lazy"></a>
+              <a href="assets/lulc22-cm-random-forest.png" class="gallery-thumb" data-gallery="lulc22" data-caption="Confusion matrix of the best model, Random Forest (OA 93.44%)"><img src="assets/lulc22-cm-random-forest.png" alt="Random Forest confusion matrix across the six LULC classes" loading="lazy"></a>
+              <a href="assets/lulc22-radar-f1.png" class="gallery-thumb" data-gallery="lulc22" data-caption="Per-class F1 radar chart comparing the top models"><img src="assets/lulc22-radar-f1.png" alt="Radar chart of per-class F1 scores for top models" loading="lazy"></a>
+              <a href="assets/lulc22-oa-kappa-scatter.png" class="gallery-thumb" data-gallery="lulc22" data-caption="Overall accuracy vs Cohen's Kappa scatter across model families"><img src="assets/lulc22-oa-kappa-scatter.png" alt="Scatter plot of overall accuracy versus Kappa for all models" loading="lazy"></a>
+              <a href="assets/lulc22-swin-folds.png" class="gallery-thumb" data-gallery="lulc22" data-caption="5-fold cross-validation accuracy of the custom Swin-Tiny-Tabular transformer"><img src="assets/lulc22-swin-folds.png" alt="Fold-by-fold accuracy of the custom Swin-Tiny-Tabular model" loading="lazy"></a>
+            </div>
+          </div>
+
+          <details class="project-details">
+            <summary>Full 22-model leaderboard</summary>
+            <div class="data-table-wrap">
+              <table class="data-table">
+                <caption>Validation results on 3,246 held-out samples; six LULC classes, 24-D feature vector.</caption>
+                <thead>
+                  <tr><th>#</th><th>Model</th><th>Category</th><th class="num">OA (%)</th><th class="num">Kappa</th><th class="num">Macro F1 (%)</th></tr>
+                </thead>
+                <tbody>
+                  <tr class="row-top"><td>1</td><td>Random Forest</td><td>Tree Ensemble</td><td class="num">93.44</td><td class="num">0.9206</td><td class="num">93.24</td></tr>
+                  <tr><td>2</td><td>CatBoost</td><td>Tree Ensemble</td><td class="num">93.01</td><td class="num">0.9154</td><td class="num">92.84</td></tr>
+                  <tr><td>3</td><td>Gradient Tree Boost</td><td>Tree Ensemble</td><td class="num">92.73</td><td class="num">0.9121</td><td class="num">92.49</td></tr>
+                  <tr><td>4</td><td>XGBoost</td><td>Tree Ensemble</td><td class="num">92.51</td><td class="num">0.9095</td><td class="num">92.26</td></tr>
+                  <tr><td>5</td><td>LightGBM</td><td>Tree Ensemble</td><td class="num">92.48</td><td class="num">0.9091</td><td class="num">92.25</td></tr>
+                  <tr><td>6</td><td>Soft Vote (Top-5)</td><td>Ensemble</td><td class="num">92.30</td><td class="num">0.9068</td><td class="num">92.15</td></tr>
+                  <tr><td>7</td><td>Weighted Soft Vote (Top-5)</td><td>Ensemble</td><td class="num">92.30</td><td class="num">0.9068</td><td class="num">92.15</td></tr>
+                  <tr><td>8</td><td>1D-CNN</td><td>Deep Neural Network</td><td class="num">92.17</td><td class="num">0.9052</td><td class="num">91.90</td></tr>
+                  <tr><td>9</td><td>Weighted Soft Vote (Top-3)</td><td>Ensemble</td><td class="num">92.11</td><td class="num">0.9045</td><td class="num">91.95</td></tr>
+                  <tr><td>10</td><td>MLP</td><td>Deep Neural Network</td><td class="num">91.90</td><td class="num">0.9019</td><td class="num">91.77</td></tr>
+                  <tr><td>11</td><td>SpectralFormer</td><td>Tabular Transformer</td><td class="num">91.87</td><td class="num">0.9016</td><td class="num">91.73</td></tr>
+                  <tr><td>12</td><td>Fusion SF+CatBoost (Emb)</td><td>Feature Fusion</td><td class="num">91.81</td><td class="num">0.9009</td><td class="num">91.70</td></tr>
+                  <tr><td>13</td><td>Fusion All+CatBoost</td><td>Feature Fusion</td><td class="num">91.77</td><td class="num">0.9005</td><td class="num">91.65</td></tr>
+                  <tr><td>14</td><td>TabTransformer</td><td>Tabular Transformer</td><td class="num">91.71</td><td class="num">0.8998</td><td class="num">91.47</td></tr>
+                  <tr><td>15</td><td>FT-Transformer</td><td>Tabular Transformer</td><td class="num">91.53</td><td class="num">0.8976</td><td class="num">91.41</td></tr>
+                  <tr><td>16</td><td>Fusion SF+CatBoost</td><td>Feature Fusion</td><td class="num">91.53</td><td class="num">0.8976</td><td class="num">91.43</td></tr>
+                  <tr><td>17</td><td>Swin-Tiny-Tabular (custom)</td><td>Vision Transformer (1D)</td><td class="num">90.83</td><td class="num">0.8890</td><td class="num">90.75</td></tr>
+                  <tr><td>18</td><td>Stacking MLP (Top-5)</td><td>Stacking</td><td class="num">90.57</td><td class="num">0.8862</td><td class="num">90.51</td></tr>
+                  <tr><td>19</td><td>Stacking LR (Top-5)</td><td>Stacking</td><td class="num">90.51</td><td class="num">0.8854</td><td class="num">90.45</td></tr>
+                  <tr><td>20</td><td>SVM</td><td>Classical ML</td><td class="num">90.20</td><td class="num">0.8815</td><td class="num">90.09</td></tr>
+                  <tr><td>21</td><td>KNN</td><td>Classical ML</td><td class="num">86.72</td><td class="num">0.8397</td><td class="num">86.64</td></tr>
+                  <tr><td>22</td><td>Naive Bayes</td><td>Classical ML</td><td class="num">84.20</td><td class="num">0.8095</td><td class="num">84.23</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <details class="project-details">
+            <summary>Technical details</summary>
+            <ul>
+              <li><strong>Model paradigms:</strong> classical ML (Random Forest, SVM, KNN, Naive Bayes), gradient boosting (XGBoost, LightGBM, CatBoost, GTB), deep networks (MLP, 1D-CNN), tabular transformers (TabTransformer, FT-Transformer, SpectralFormer, custom Swin-Tiny-Tabular), and hybrids (soft voting, stacking, feature fusion).</li>
+              <li><strong>Feature vector (24-D):</strong> Sentinel-2 bands B2-B12, spectral indices (NDVI, NDVI-diff, NDWI, MNDWI, NDBI, NDRE, NDSI, NBR, BSI), Sentinel-1 VV/VH backscatter, SRTM elevation/slope/northness, and GLCM texture (contrast, entropy).</li>
+              <li><strong>Dataset:</strong> 10,530 labeled samples (7,284 train / 3,246 validation) across 6 classes: built-up, vegetation/forest, agriculture, water, barren rock, and snow/glaciers.</li>
+              <li><strong>Custom architecture:</strong> Swin-Tiny-Tabular, a 27M-parameter 1D adaptation of the Swin Transformer with windowed self-attention, patch merging, and stochastic depth, trained with 5-fold stratified CV (OOF accuracy 90.83%).</li>
+              <li><strong>Top results:</strong> Random Forest 93.44% OA, CatBoost 93.01%, Gradient Tree Boost 92.73%. Tree ensembles led all paradigms on this tabular spectral task.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+
+      <!-- ===== 1. Dissertation ===== -->
+      <article class="project-card featured animate-on-scroll" data-types="robotics,iot,research">
+        <div class="project-visual chart"><img src="assets/dissertation-overlay.png" alt="Overlaid best-trial trajectories comparing manual and autonomous navigation" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges">
+            <span class="project-badge gold"><i class="fas fa-graduation-cap" aria-hidden="true"></i> MCA Dissertation · CSIR-CMERI</span>
+            <span class="project-badge green">95.37% Tracking Accuracy</span>
+          </div>
+          <h2 class="project-title">Communication-Integrated Mobile Environmental Monitoring Framework</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Sikkim University &amp; CSIR-CMERI</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025-2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            A unified autonomous robotic platform for environmental monitoring: YOLO-seg vision-guided navigation
+            (mask mAP@50 = 0.988) ONNX-optimized to 15.4 FPS on a Raspberry Pi CPU, fused with a tuned PID controller
+            and a full sensor-to-cloud communication stack (Flask, Firebase, ThingSpeak, SQLite).
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-value">95.37%</div><div class="metric-label">Accuracy</div></div>
+            <div class="metric"><div class="metric-value">87.4%</div><div class="metric-label">RMSE ↓</div></div>
+            <div class="metric"><div class="metric-value">15.4</div><div class="metric-label">FPS on Pi</div></div>
+            <div class="metric"><div class="metric-value">40</div><div class="metric-label">Trials</div></div>
+          </div>
           <div class="project-tech">
-            <span class="tech-badge">Raspberry Pi</span><span class="tech-badge">YOLO-seg</span><span class="tech-badge">ONNX Runtime</span><span class="tech-badge">PID Control</span><span class="tech-badge">Flask</span><span class="tech-badge">Firebase</span><span class="tech-badge">ThingSpeak</span><span class="tech-badge">SQLite</span><span class="tech-badge">Arduino</span><span class="tech-badge">ESP32</span>
+            <span class="tech-badge">Raspberry Pi</span><span class="tech-badge">YOLO-seg</span><span class="tech-badge">ONNX Runtime</span>
+            <span class="tech-badge">PID Control</span><span class="tech-badge">Flask</span><span class="tech-badge">Firebase</span>
+            <span class="tech-badge">SQLite</span><span class="tech-badge">Arduino</span><span class="tech-badge">ESP32</span>
+          </div>
+          <details class="project-details">
+            <summary>Technical details</summary>
+            <ul>
+              <li>PID controller (Kp = 13.2, Kd = 0.475) achieves 95.37% tracking accuracy and an 87.4% RMSE reduction versus manual teleoperation across 40 controlled trials.</li>
+              <li>YOLO-seg navigation model optimized through ONNX conversion: 15.4 FPS at 64.8 ms latency on Raspberry Pi CPU, a 1.57× speedup.</li>
+              <li>Communication stack streams multi-sensor environmental data to Firebase and ThingSpeak with SQLite local buffering and a Flask dashboard.</li>
+            </ul>
+          </details>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/nav-error-over-time.png" class="gallery-thumb" data-gallery="dissertation" data-caption="Tracking error over time: best autonomous trial vs best manual trial"><img src="assets/nav-error-over-time.png" alt="Tracking error over time for the best manual and autonomous trials" loading="lazy"></a>
+              <a href="assets/env-flask-dashboard.png" class="gallery-thumb" data-gallery="dissertation" data-caption="Live Flask dashboard of the environmental monitoring stack"><img src="assets/env-flask-dashboard.png" alt="Flask dashboard showing live environmental sensor readings" loading="lazy"></a>
+              <a href="assets/env-thingspeak-dashboard.png" class="gallery-thumb" data-gallery="dissertation" data-caption="ThingSpeak cloud dashboard receiving the streamed sensor data"><img src="assets/env-thingspeak-dashboard.png" alt="ThingSpeak dashboard with streamed environmental data channels" loading="lazy"></a>
+              <a href="assets/nav-waterfall.png" class="gallery-thumb" data-gallery="dissertation" data-caption="Waterfall chart of the 87.4% RMSE improvement from manual to autonomous control"><img src="assets/nav-waterfall.png" alt="Waterfall chart showing RMSE improvement from manual to autonomous navigation" loading="lazy"></a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-chart-line"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge paper">Research Paper</span>
-          <h3 class="project-title">Manual vs Autonomous Robot Navigation: Experimental Comparison</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> Sikkim University &amp; CSIR-CMERI &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> March - April 2026</p>
-          <p class="project-desc">40-trial study: autonomous YOLO+PID vs human teleoperation. Results: mean RMSE 2.119 cm vs 16.768 cm, <strong>87.4% reduction</strong>. Accuracy 95.37% vs 63.32%. Cohen's d = 8.944.</p>
-          <div class="project-tech"><span class="tech-badge">YOLO</span><span class="tech-badge">Homography</span><span class="tech-badge">PID Control</span><span class="tech-badge">OpenCV</span><span class="tech-badge">Statistical Analysis</span><span class="tech-badge">Raspberry Pi</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/manual-vs-autonomous-vision-based-robot-navigation" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== 2. Smart Environment Monitor ===== -->
+      <article class="project-card animate-on-scroll" data-types="iot,ml">
+        <div class="project-visual chart"><img src="assets/env-monitor-models.png" alt="Performance comparison of the three machine learning models in the monitoring pipeline" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">IoT + ML Pipeline</span></div>
+          <h2 class="project-title">Smart Environment Monitor</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> Raspberry Pi &amp; Arduino</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            ML-augmented IoT sensing platform running three models (classification, clustering, and anomaly
+            detection) behind a 6-level alert engine. Data flows from Arduino through a Raspberry Pi into SQLite,
+            Firebase, and ThingSpeak, with a Flask dashboard on top.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">scikit-learn</span><span class="tech-badge">Flask</span>
+            <span class="tech-badge">Firebase</span><span class="tech-badge">ThingSpeak</span><span class="tech-badge">SQLite</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/env-flask-dashboard.png" class="gallery-thumb" data-gallery="env-monitor" data-caption="Flask dashboard with live sensor readings and alert levels"><img src="assets/env-flask-dashboard.png" alt="Flask dashboard of the smart environment monitor" loading="lazy"></a>
+              <a href="assets/env-thingspeak-dashboard.png" class="gallery-thumb" data-gallery="env-monitor" data-caption="ThingSpeak cloud channels receiving streamed sensor data"><img src="assets/env-thingspeak-dashboard.png" alt="ThingSpeak dashboard with sensor data channels" loading="lazy"></a>
+              <a href="assets/env-roc-all-models.png" class="gallery-thumb" data-gallery="env-monitor" data-caption="ROC curves comparing all models in the pipeline"><img src="assets/env-roc-all-models.png" alt="ROC curves for all models in the monitoring pipeline" loading="lazy"></a>
+              <a href="assets/env-rf-features.png" class="gallery-thumb" data-gallery="env-monitor" data-caption="Random Forest feature importance for air-quality classification"><img src="assets/env-rf-features.png" alt="Feature importance chart of the Random Forest classifier" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/smart-env-monitor" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://huggingface.co/satwikshreshth1/smart-env-monitor-models" target="_blank" rel="noopener" class="project-link"><i class="fas fa-brain" aria-hidden="true"></i> Models</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics,ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-microchip"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge paper">Hybrid PID</span>
-          <h3 class="project-title">ML-Augmented PID Control for Autonomous Line-Following Robot</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> Sikkim University &amp; CSIR-CMERI &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2026</p>
-          <p class="project-desc">Hybrid control: Random Forest trained on 208,983 time steps. Results: <strong>92.1% MAE reduction</strong>, <strong>97.9% error energy reduction</strong>, <strong>99.6% in-band accuracy</strong>. Lyapunov stability formally proven.</p>
-          <div class="project-tech"><span class="tech-badge">scikit-learn</span><span class="tech-badge">PID Control</span><span class="tech-badge">Lyapunov Stability</span><span class="tech-badge">Arduino</span><span class="tech-badge">Raspberry Pi</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/Tripathagamini-S_Auto" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== 3. Tripathagamini-S Auto ===== -->
+      <article class="project-card animate-on-scroll" data-types="robotics,ml">
+        <div class="project-visual chart"><img src="assets/tripathagamini-accuracy.png" alt="In-band accuracy distribution of the hybrid ML and PID controller across runs" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges">
+            <span class="project-badge">4-Version Evolution</span>
+            <span class="project-badge green">99.6% Accuracy</span>
+          </div>
+          <h2 class="project-title">Tripathagamini-S Autonomous Robot</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> CSIR-CMERI, Micro Robotics Lab</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Feb-Mar 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            A line-following robot built in four versions: v1 YOLO ONNX vision (25-30 FPS), v2 CSV trajectory
+            logging, v3 five-channel IR array at 100 Hz via Arduino, and v4 hybrid ML + PID control reaching 99.6%
+            in-band accuracy. The trained model is published on HuggingFace.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-value">99.6%</div><div class="metric-label">Accuracy</div></div>
+            <div class="metric"><div class="metric-value">97.9%</div><div class="metric-label">Error Energy ↓</div></div>
+            <div class="metric"><div class="metric-value">100 Hz</div><div class="metric-label">Control Rate</div></div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">YOLO</span><span class="tech-badge">scikit-learn</span><span class="tech-badge">PID Control</span>
+            <span class="tech-badge">IR Sensors</span><span class="tech-badge">Arduino</span><span class="tech-badge">HuggingFace</span>
+          </div>
+          <details class="project-details">
+            <summary>Technical details</summary>
+            <ul>
+              <li>Hybrid controller: a Random Forest residual-error predictor trained on 208,983 time steps augments a classical PID loop, cutting MAE by 92.1% and error energy by 97.9%.</li>
+              <li>Lyapunov stability of the hybrid ML + PID architecture formally proven.</li>
+              <li>Training data (221,967 rows over 100 robot runs) published on Kaggle; Optuna-tuned model (432 MB) on HuggingFace.</li>
+            </ul>
+          </details>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/trip-accuracy-proof.png" class="gallery-thumb" data-gallery="trip-auto" data-caption="Accuracy verification: 99.6% of samples within the target error band"><img src="assets/trip-accuracy-proof.png" alt="Accuracy proof chart showing in-band samples" loading="lazy"></a>
+              <a href="assets/trip-ml-contribution.png" class="gallery-thumb" data-gallery="trip-auto" data-caption="Contribution of the ML residual predictor on top of the PID baseline"><img src="assets/trip-ml-contribution.png" alt="Chart of the machine learning contribution to control performance" loading="lazy"></a>
+              <a href="assets/trip-lyapunov-energy.png" class="gallery-thumb" data-gallery="trip-auto" data-caption="Lyapunov energy function decreasing over time, supporting the stability proof"><img src="assets/trip-lyapunov-energy.png" alt="Lyapunov energy decay plot" loading="lazy"></a>
+              <a href="assets/trip-metrics-table.png" class="gallery-thumb" data-gallery="trip-auto" data-caption="Summary metrics table: PID baseline vs hybrid ML + PID"><img src="assets/trip-metrics-table.png" alt="Metrics table comparing PID and hybrid controllers" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/Tripathagamini-S_Auto" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://huggingface.co/satwikshreshth1/pid-ml-follower-model" target="_blank" rel="noopener" class="project-link"><i class="fas fa-brain" aria-hidden="true"></i> Model</a>
+            <a href="https://www.kaggle.com/datasets/satwikshreshth01/path-error-data" target="_blank" rel="noopener" class="project-link"><i class="fas fa-database" aria-hidden="true"></i> Dataset</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics,ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-car"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">4-Version Evolution</span>
-          <h3 class="project-title">Tripathagamini-S Auto / Autonomous Line-Following Robot</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> CSIR-CMERI, Micro Robotics Lab &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> Feb - 2026</p>
-          <p class="project-desc"><strong>v1.0.0</strong>: YOLO ONNX at 25-30 FPS. <strong>v2.0.0</strong>: CSV trajectory logging. <strong>v3.0.0</strong>: 5-channel IR array via Arduino at 100 Hz. <strong>v4.0.0</strong>: Hybrid ML+PID, 99.6% accuracy.</p>
-          <div class="project-tech"><span class="tech-badge">YOLO</span><span class="tech-badge">scikit-learn</span><span class="tech-badge">PID Control</span><span class="tech-badge">IR Sensors</span><span class="tech-badge">Arduino</span><span class="tech-badge">HuggingFace</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/Tripathagamini-S_Auto" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a><a href="https://huggingface.co/satwikshreshth1/pid-ml-follower-model" target="_blank" class="project-link"><i class="fas fa-brain"></i> Model</a></div>
+      <!-- ===== 4. YOLO Edge Optimization ===== -->
+      <article class="project-card animate-on-scroll" data-types="robotics,ml">
+        <div class="project-visual photo"><img src="assets/yolo-track-frame.jpg" alt="Robot camera frame from the custom path segmentation dataset" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Embedded Optimization</span></div>
+          <h2 class="project-title">YOLO Edge Optimization</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> CSIR-CMERI</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            Model-to-deployment pipeline for real-time path segmentation on Raspberry Pi. I built a custom 289-image
+            dataset, trained YOLO-seg, and converted it to ONNX at 320×320, reaching 15.4 FPS / 64.8 ms, a 1.57×
+            speedup with zero memory leaks over a 30-minute stability run.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-value">15.4</div><div class="metric-label">FPS</div></div>
+            <div class="metric"><div class="metric-value">64.8 ms</div><div class="metric-label">Latency</div></div>
+            <div class="metric"><div class="metric-value">1.57×</div><div class="metric-label">Speedup</div></div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">YOLO-seg</span><span class="tech-badge">ONNX Runtime</span>
+            <span class="tech-badge">Raspberry Pi</span><span class="tech-badge">Ultralytics</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/YOLOv8-Path-Segmentation-RealTime-Optimization" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-route"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Teleoperation + Vision</span>
-          <h3 class="project-title">Tripathagamini-S / Homography Trajectory Tracking Platform</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> CSIR-CMERI, Micro Robotics Lab &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2026</p>
-          <p class="project-desc">Web-based teleoperated robot with homography-based trajectory analysis. 4-point interactive calibration, simultaneous path and robot tracking at 30+ FPS. Ground-truth measurement platform.</p>
-          <div class="project-tech"><span class="tech-badge">Homography</span><span class="tech-badge">OpenCV</span><span class="tech-badge">Flask</span><span class="tech-badge">PCA9685</span><span class="tech-badge">Raspberry Pi</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/manual-vs-autonomous-vision-based-robot-navigation" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== 5. Image to Sketch ===== -->
+      <article class="project-card animate-on-scroll" data-types="ml">
+        <div class="project-visual" aria-hidden="true"><i class="fas fa-image"></i></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Deep Learning</span></div>
+          <h2 class="project-title">Image to Sketch using U-Net</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> TensorFlow / Keras</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            U-Net CNN for photo-to-pencil-sketch transformation trained with a custom MAE + SSIM loss, reaching an
+            85% SSIM score. Deployed as a Streamlit web app with sub-2-second inference.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-value">85%</div><div class="metric-label">SSIM</div></div>
+            <div class="metric"><div class="metric-value">&lt;2 s</div><div class="metric-label">Inference</div></div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">TensorFlow / Keras</span><span class="tech-badge">U-Net</span><span class="tech-badge">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/Image_To_Sketch" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-eye"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Embedded Optimization</span>
-          <h3 class="project-title">YOLO Path Segmentation &amp; Real-Time Optimization</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> CSIR-CMERI &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2026</p>
-          <p class="project-desc">Complete model-to-deployment pipeline. 289-image custom dataset. <strong>320x320 ONNX: 15.4 FPS, 64.8 ms (1.57x speedup)</strong>. 30-min stability: 15.2&plusmn;0.8 FPS, zero memory leaks.</p>
-          <div class="project-tech"><span class="tech-badge">YOLO-seg</span><span class="tech-badge">ONNX Runtime</span><span class="tech-badge">Raspberry Pi</span><span class="tech-badge">Ultralytics</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/YOLOv8-Path-Segmentation-RealTime-Optimization" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== Manual vs Autonomous study ===== -->
+      <article class="project-card animate-on-scroll" data-types="robotics,research">
+        <div class="project-visual chart"><img src="assets/nav-trajectories.png" alt="Trajectories of all 40 trials, 20 manual versus 20 autonomous" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Research Paper</span></div>
+          <h2 class="project-title">Manual vs Autonomous Navigation: Experimental Comparison</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Sikkim University &amp; CSIR-CMERI</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Mar-Apr 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            40-trial controlled study comparing autonomous YOLO + PID navigation against human teleoperation:
+            mean RMSE 2.119 cm vs 16.768 cm (87.4% reduction), accuracy 95.37% vs 63.32%, Cohen's d = 8.944.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">YOLO</span><span class="tech-badge">Homography</span><span class="tech-badge">PID Control</span>
+            <span class="tech-badge">OpenCV</span><span class="tech-badge">Statistical Analysis</span>
+          </div>
+          <details class="project-details">
+            <summary>Key statistics (20 + 20 trials)</summary>
+            <div class="data-table-wrap">
+              <table class="data-table" style="min-width:420px;">
+                <thead>
+                  <tr><th>Metric</th><th class="num">Manual</th><th class="num">Autonomous</th><th class="num">Improvement</th></tr>
+                </thead>
+                <tbody>
+                  <tr class="row-top"><td>Mean RMSE</td><td class="num">16.768 cm</td><td class="num">2.119 cm</td><td class="num">87.4%</td></tr>
+                  <tr><td>Median RMSE</td><td class="num">16.211 cm</td><td class="num">1.849 cm</td><td class="num">88.6%</td></tr>
+                  <tr><td>Std deviation</td><td class="num">2.101 cm</td><td class="num">0.977 cm</td><td class="num">53.5%</td></tr>
+                  <tr><td>Tracking accuracy</td><td class="num">63.32%</td><td class="num">95.37%</td><td class="num">+32.05 pp</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note">Mann-Whitney U = 400, p = 3.40×10⁻⁸; permutation test p &lt; 0.0001; Cohen's d = 8.944 (exceptionally large effect).</p>
+          </details>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/nav-violin.png" class="gallery-thumb" data-gallery="nav-study" data-caption="Box and violin plots of RMSE: manual vs autonomous across all 40 trials"><img src="assets/nav-violin.png" alt="Box and violin plot comparing manual and autonomous RMSE distributions" loading="lazy"></a>
+              <a href="assets/nav-waterfall.png" class="gallery-thumb" data-gallery="nav-study" data-caption="Waterfall chart of the 87.4% RMSE improvement"><img src="assets/nav-waterfall.png" alt="Waterfall chart of RMSE improvement" loading="lazy"></a>
+              <a href="assets/nav-error-over-time.png" class="gallery-thumb" data-gallery="nav-study" data-caption="Tracking error over time for the best trial of each mode"><img src="assets/nav-error-over-time.png" alt="Error over time for best manual and autonomous trials" loading="lazy"></a>
+              <a href="assets/nav-summary-table.png" class="gallery-thumb" data-gallery="nav-study" data-caption="Full summary statistics table from the study"><img src="assets/nav-summary-table.png" alt="Summary statistics table of the navigation study" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/manual-vs-autonomous-vision-based-robot-navigation" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="robotics,ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-database"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">ML Training Repo</span>
-          <h3 class="project-title">pid-ml-follower / RF Residual Error Predictor</h3>
-          <p class="project-meta"><i class="fas fa-building"></i> CSIR-CMERI &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> March 2026</p>
-          <p class="project-desc">221,967 rows, 100 robot runs. Optuna tuning (50 trials). Tuned RF: RMSE = 0.018731, <strong>14.3% over persist-error baseline</strong>. Model (432 MB) on HuggingFace.</p>
-          <div class="project-tech"><span class="tech-badge">scikit-learn</span><span class="tech-badge">Optuna</span><span class="tech-badge">Kaggle</span><span class="tech-badge">HuggingFace</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/pid-ml-follower" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a><a href="https://www.kaggle.com/datasets/satwikshreshth01/path-error-data" target="_blank" class="project-link"><i class="fas fa-database"></i> Dataset</a></div>
+      <!-- ===== ML-Augmented PID ===== -->
+      <article class="project-card animate-on-scroll" data-types="robotics,ml,research">
+        <div class="project-visual chart"><img src="assets/pid-ml-rmse.png" alt="RMSE comparison between the baseline PID and the Optuna-tuned hybrid controller" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Hybrid Control</span></div>
+          <h2 class="project-title">ML-Augmented PID Control</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Sikkim University &amp; CSIR-CMERI</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            Hybrid control research: a Random Forest residual predictor trained on 208,983 time steps layered on a
+            PID loop. Results: 92.1% MAE reduction, 97.9% error energy reduction, and 99.6% in-band accuracy, with
+            Lyapunov stability formally proven.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">scikit-learn</span><span class="tech-badge">PID Control</span>
+            <span class="tech-badge">Lyapunov Stability</span><span class="tech-badge">Arduino</span><span class="tech-badge">Raspberry Pi</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/pid-predicted-actual.png" class="gallery-thumb" data-gallery="pid-ml" data-caption="Predicted vs actual residual error of the tuned Random Forest model"><img src="assets/pid-predicted-actual.png" alt="Predicted versus actual scatter plot of the tuned model" loading="lazy"></a>
+              <a href="assets/pid-optuna-history.png" class="gallery-thumb" data-gallery="pid-ml" data-caption="Optuna hyperparameter optimization history"><img src="assets/pid-optuna-history.png" alt="Optuna optimization history chart" loading="lazy"></a>
+              <a href="assets/pid-feature-importance.png" class="gallery-thumb" data-gallery="pid-ml" data-caption="Feature importances of the tuned residual predictor"><img src="assets/pid-feature-importance.png" alt="Feature importance chart of the tuned model" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/Tripathagamini-S_Auto" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://github.com/satwik-shreshth/pid-ml-follower" target="_blank" rel="noopener" class="project-link"><i class="fas fa-database" aria-hidden="true"></i> Training Repo</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="iot,ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-wind"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">IoT + ML Pipeline</span>
-          <h3 class="project-title">Smart Environment Monitor / ML-Augmented IoT Sensing</h3>
-          <p class="project-meta"><i class="fas fa-microchip"></i> Raspberry Pi &amp; Arduino &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2026</p>
-          <p class="project-desc">Three ML models: classifier, clustering, anomaly detection. 6-level alert engine. Data: Arduino &rarr; RPi &rarr; SQLite + Firebase + ThingSpeak + Flask.</p>
-          <div class="project-tech"><span class="tech-badge">scikit-learn</span><span class="tech-badge">Flask</span><span class="tech-badge">Firebase</span><span class="tech-badge">ThingSpeak</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/smart-env-monitor" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a><a href="https://huggingface.co/satwikshreshth1/smart-env-monitor-models" target="_blank" class="project-link"><i class="fas fa-brain"></i> Models</a></div>
+      <!-- ===== Homography platform ===== -->
+      <article class="project-card animate-on-scroll" data-types="robotics">
+        <div class="project-visual chart"><img src="assets/homography-trial.png" alt="Best trial trajectory analysis from homography-based tracking" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Teleoperation + Vision</span></div>
+          <h2 class="project-title">Tripathagamini-S: Homography Trajectory Tracking</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> CSIR-CMERI, Micro Robotics Lab</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            Web-teleoperated robot with homography-based trajectory analysis: 4-point interactive calibration and
+            simultaneous path + robot tracking at 30+ FPS, serving as the ground-truth measurement platform for the
+            navigation study.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Homography</span><span class="tech-badge">OpenCV</span><span class="tech-badge">Flask</span>
+            <span class="tech-badge">PCA9685</span><span class="tech-badge">Raspberry Pi</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/homog-rmse.png" class="gallery-thumb" data-gallery="homography" data-caption="Per-trial RMSE from homography-based trajectory tracking"><img src="assets/homog-rmse.png" alt="Per-trial RMSE comparison chart" loading="lazy"></a>
+              <a href="assets/homog-boxplot.png" class="gallery-thumb" data-gallery="homography" data-caption="Tracking error distribution across all logged trials"><img src="assets/homog-boxplot.png" alt="Boxplot of tracking error distribution" loading="lazy"></a>
+              <a href="assets/homog-summary-stats.png" class="gallery-thumb" data-gallery="homography" data-caption="Summary statistics table of the tracking experiments"><img src="assets/homog-summary-stats.png" alt="Summary statistics table" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/Tripathagamini-S" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-shield-alt"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Adversarial ML</span>
-          <h3 class="project-title">Adversarial Robustness on CIFAR-10 / FGSM &amp; PGD</h3>
-          <p class="project-meta"><i class="fas fa-microchip"></i> PyTorch &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025</p>
-          <p class="project-desc">Complete adversarial robustness pipeline on CIFAR-10. Implements FGSM and PGD attacks, then PGD adversarial training as defense. Publication-ready visualizations.</p>
-          <div class="project-tech"><span class="tech-badge">PyTorch</span><span class="tech-badge">CIFAR-10</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/PGD-Robustness-CIFAR" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== Adversarial robustness ===== -->
+      <article class="project-card animate-on-scroll" data-types="ml">
+        <div class="project-visual chart"><img src="assets/adversarial-fgsm.png" alt="FGSM attack visualization showing clean images, perturbations, and adversarial results" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Adversarial ML</span></div>
+          <h2 class="project-title">Adversarial Robustness on CIFAR-10</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> PyTorch</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            Complete adversarial robustness pipeline: FGSM and PGD attacks implemented from scratch, followed by
+            PGD adversarial training as a defense, with publication-ready robustness visualizations.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">PyTorch</span><span class="tech-badge">FGSM / PGD</span><span class="tech-badge">CIFAR-10</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/adv-robustness-curves.png" class="gallery-thumb" data-gallery="adversarial" data-caption="Robustness curves: accuracy vs attack strength (epsilon) for standard and adversarially trained models"><img src="assets/adv-robustness-curves.png" alt="Robustness curves under increasing attack strength" loading="lazy"></a>
+              <a href="assets/adv-final-comparison.png" class="gallery-thumb" data-gallery="adversarial" data-caption="Final comparison of clean and adversarial accuracy before and after PGD adversarial training"><img src="assets/adv-final-comparison.png" alt="Final comparison chart of model robustness" loading="lazy"></a>
+              <a href="assets/adv-summary-table.png" class="gallery-thumb" data-gallery="adversarial" data-caption="Summary table of attack and defense results"><img src="assets/adv-summary-table.png" alt="Summary table of adversarial robustness results" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/PGD-Robustness-CIFAR" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-image"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Deep Learning</span>
-          <h3 class="project-title">Image-to-Sketch Generation using U-Net CNN</h3>
-          <p class="project-meta"><i class="fas fa-microchip"></i> TensorFlow &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025</p>
-          <p class="project-desc">U-Net CNN for image-to-sketch transformation with custom MAE+SSIM loss achieving <strong>85% SSIM score</strong>. Deployed as Streamlit web app with under 2-second inference.</p>
-          <div class="project-tech"><span class="tech-badge">TensorFlow / Keras</span><span class="tech-badge">Streamlit</span></div>
+      <!-- ===== Sound detection ===== -->
+      <article class="project-card animate-on-scroll" data-types="ml">
+        <div class="project-visual" aria-hidden="true"><i class="fas fa-volume-up"></i></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Audio ML</span></div>
+          <h2 class="project-title">Scream / Non-Scream Sound Detection</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> Raspberry Pi</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            Binary audio classification for real-time distress-sound detection, engineered for edge deployment on
+            Raspberry Pi.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span><span class="tech-badge">Audio ML</span><span class="tech-badge">Raspberry Pi</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/Sound_Detection_Scream_NonScream" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-volume-up"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Audio ML</span>
-          <h3 class="project-title">Sound Detection / Scream &amp; Non-Scream Classification</h3>
-          <p class="project-meta"><i class="fas fa-microchip"></i> Raspberry Pi &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025</p>
-          <p class="project-desc">Binary audio classification system for real-time distress sound detection targeting edge deployment on Raspberry Pi.</p>
-          <div class="project-tech"><span class="tech-badge">PyTorch</span><span class="tech-badge">Raspberry Pi</span><span class="tech-badge">Python</span></div>
-          <div class="project-links"><a href="https://github.com/satwik-shreshth/Sound_Detection_Scream_NonScream" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+      <!-- ===== GEE LULC ===== -->
+      <article class="project-card animate-on-scroll" data-types="remote-sensing,ml">
+        <div class="project-visual photo"><img src="assets/lulc-east-sikkim-map.png" alt="Classified land cover map of East Sikkim produced in Google Earth Engine" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Remote Sensing</span></div>
+          <h2 class="project-title">Satellite Land Cover Classification (GEE)</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-satellite" aria-hidden="true"></i> Google Earth Engine</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            Random Forest land cover mapping over East Sikkim with multi-year Sentinel-2 composites: 92% accuracy
+            across five classes over 500+ km², with an automated GEE + QGIS workflow.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Google Earth Engine</span><span class="tech-badge">Sentinel-2</span>
+            <span class="tech-badge">NDVI / NDWI / NDBI</span><span class="tech-badge">QGIS</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/gee-cm-rf.png" class="gallery-thumb" data-gallery="gee-lulc" data-caption="Random Forest confusion matrix on the validation samples"><img src="assets/gee-cm-rf.png" alt="Random Forest confusion matrix" loading="lazy"></a>
+              <a href="assets/gee-roc-macro.png" class="gallery-thumb" data-gallery="gee-lulc" data-caption="Macro-average ROC curves: Random Forest vs Gradient Tree Boost"><img src="assets/gee-roc-macro.png" alt="Macro-average ROC curves for RF and GTB" loading="lazy"></a>
+              <a href="assets/gee-accuracy-table.png" class="gallery-thumb" data-gallery="gee-lulc" data-caption="Accuracy summary table: RF vs GTB"><img src="assets/gee-accuracy-table.png" alt="Accuracy summary table comparing classifiers" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/LULC_Classification" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="remote-sensing,ml" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-satellite"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Remote Sensing</span>
-          <h3 class="project-title">Satellite Land Use / Land Cover Classification</h3>
-          <p class="project-meta"><i class="fas fa-satellite"></i> Google Earth Engine &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025</p>
-          <p class="project-desc">ML classifier for multi-class land cover mapping. <strong>92% accuracy</strong> across five land classes over 500+ km&sup2;. Automated GEE workflow.</p>
-          <div class="project-tech"><span class="tech-badge">Google Earth Engine</span><span class="tech-badge">Sentinel-2</span><span class="tech-badge">NDVI/NDWI/NDBI</span><span class="tech-badge">QGIS</span></div>
+      <!-- ===== NDWI ===== -->
+      <article class="project-card animate-on-scroll" data-types="remote-sensing">
+        <div class="project-visual" aria-hidden="true"><i class="fas fa-water"></i></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">Remote Sensing</span></div>
+          <h2 class="project-title">Water Body Mapping: NDWI &amp; Sentinel-2</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-satellite" aria-hidden="true"></i> Google Earth Engine</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Intermediate</span>
+          </p>
+          <p class="project-desc">
+            Automated water body detection using NDWI on Sentinel-2 imagery over Chilika Lake, with multi-temporal
+            analysis tracking seasonal water-extent variations.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">NDWI</span><span class="tech-badge">Google Earth Engine</span>
+            <span class="tech-badge">Sentinel-2</span><span class="tech-badge">QGIS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/NDWI_Chilika" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card animate-on-scroll" data-types="remote-sensing" style="display:flex;">
-        <div class="project-card-img"><span class="project-img-icon"><i class="fas fa-water"></i></span></div>
-        <div class="project-card-body">
-          <span class="project-badge">Remote Sensing</span>
-          <h3 class="project-title">Water Body Mapping using NDWI &amp; Sentinel-2</h3>
-          <p class="project-meta"><i class="fas fa-satellite"></i> Google Earth Engine &nbsp;&middot;&nbsp; <i class="fas fa-calendar"></i> 2025</p>
-          <p class="project-desc">Automated water body detection using NDWI on Sentinel-2. Multi-temporal analysis tracking seasonal water extent variations.</p>
-          <div class="project-tech"><span class="tech-badge">NDWI</span><span class="tech-badge">Google Earth Engine</span><span class="tech-badge">Sentinel-2</span><span class="tech-badge">QGIS</span></div>
+      <!-- ===== CSV sensor logger ===== -->
+      <article class="project-card animate-on-scroll" data-types="iot">
+        <div class="project-visual" aria-hidden="true"><i class="fas fa-file-csv"></i></div>
+        <div class="project-body">
+          <div class="project-badges"><span class="project-badge">IoT Tooling</span></div>
+          <h2 class="project-title">CSV Sensor Logger</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> Raspberry Pi</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2025</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Beginner</span>
+          </p>
+          <p class="project-desc">
+            Flask-based sensor monitoring utility for Raspberry Pi with live readings and one-click CSV export.
+            This is the data-capture backbone reused across my robotics experiments.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Flask</span><span class="tech-badge">PySerial</span><span class="tech-badge">CSV</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/csv-sensor-logger" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </main>
 
-  <footer class="footer"><div class="footer-content">
-    <p>&copy; <span id="footerYear"></span> Satwik Shreshth</p>
-    <div class="footer-links">
-      <a href="https://mail.google.com/mail/?view=cm&to=satwikshreshth2002@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/satwik-shreshth" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">S</span>Satwik Shreshth</a>
+          <p>Machine Learning Engineer building intelligent systems across AI, embedded hardware, and geospatial analytics.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Connect</h2>
+          <ul>
+            <li><a href="mailto:satwikshreshth2002@gmail.com">Email</a></li>
+            <li><a href="https://github.com/satwik-shreshth" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://huggingface.co/satwikshreshth1" target="_blank" rel="noopener">HuggingFace</a></li>
+            <li><a href="https://www.kaggle.com/satwikshreshth01" target="_blank" rel="noopener">Kaggle</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Satwik Shreshth. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="mailto:satwikshreshth2002@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/satwik-shreshth" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/satwik-shreshth-5310372b7" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/917260091323" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
     </div>
-  </div></footer>
-  <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
   <script src="script.js"></script>
-</body></html>
+</body>
+</html>
