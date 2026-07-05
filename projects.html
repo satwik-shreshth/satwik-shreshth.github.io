@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Satwik Shreshth</title>
-  <meta name="description" content="Projects by Satwik Shreshth: a 22-model LULC classification benchmark, autonomous robotics, embedded AI, computer vision, and remote sensing systems.">
+  <meta name="description" content="Projects by Satwik Shreshth: conformal LLM hallucination detection, a 22-model LULC classification benchmark, autonomous robotics, embedded AI, computer vision, and remote sensing systems.">
   <meta name="author" content="Satwik Shreshth">
   <link rel="canonical" href="https://satwik-shreshth.github.io/projects.html">
   <meta property="og:type" content="website">
@@ -187,6 +187,54 @@
               <li><strong>Top results:</strong> Random Forest 93.44% OA, CatBoost 93.01%, Gradient Tree Boost 92.73%. Tree ensembles led all paradigms on this tabular spectral task.</li>
             </ul>
           </details>
+        </div>
+      </article>
+
+      <!-- ===== TRUST-LLM ===== -->
+      <article class="project-card featured animate-on-scroll" data-types="ml,research">
+        <div class="project-visual chart"><img src="assets/thumbs/trust-llm-pipeline.jpg" alt="TRUST-LLM pipeline: question through Mistral-7B, four uncertainty scores, conformal calibration, trust or flag decision" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-badges">
+            <span class="project-badge gold"><i class="fas fa-flask" aria-hidden="true"></i> LLM Research · IEEE-style Paper</span>
+          </div>
+          <h2 class="project-title">TRUST-LLM: Conformal Hallucination Detection</h2>
+          <p class="project-meta">
+            <span><i class="fas fa-microchip" aria-hidden="true"></i> Mistral-7B (4-bit) · Kaggle T4×2</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 2026</span>
+            <span><i class="fas fa-signal" aria-hidden="true"></i> Advanced</span>
+          </p>
+          <p class="project-desc">
+            Can an LLM's uncertainty be turned into a provable guarantee instead of a raw confidence score? I applied
+            split conformal prediction to four uncertainty-scoring methods (log-probability, token entropy, semantic
+            entropy, self-consistency), calibrating a formal trust region on TriviaQA (α = 0.10) and stress-testing it
+            on adversarial TruthfulQA and domain-shifted NQ-Open and MedMCQA — 1,100 questions, 6,600 generations,
+            under three hours on free-tier GPUs with no fine-tuning. Key finding: coverage and detection utility move
+            in opposite directions under shift, and the MedMCQA failure is a concept shift that importance-weighted
+            recalibration provably cannot repair.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-value">0.90</div><div class="metric-label">Target Coverage</div></div>
+            <div class="metric"><div class="metric-value">0.826</div><div class="metric-label">Best OOD F1</div></div>
+            <div class="metric"><div class="metric-value">4 × 4</div><div class="metric-label">Methods × Domains</div></div>
+            <div class="metric"><div class="metric-value">6,600</div><div class="metric-label">Generations</div></div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">Conformal Prediction</span><span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">Transformers</span><span class="tech-badge">Mistral-7B 4-bit</span>
+            <span class="tech-badge">Sentence-Transformers</span>
+          </div>
+          <div class="project-gallery">
+            <span class="gallery-title"><i class="fas fa-chart-column" aria-hidden="true"></i> Results gallery</span>
+            <div class="gallery-strip">
+              <a href="assets/trust-llm-pipeline.png" class="gallery-thumb" data-gallery="trust-llm" data-caption="Pipeline: greedy + 5 stochastic generations feed four uncertainty scores; a conformal threshold τ calibrated on TriviaQA decides trust vs flag"><img src="assets/thumbs/trust-llm-pipeline.jpg" alt="TRUST-LLM pipeline overview diagram" loading="lazy"></a>
+              <a href="assets/trust-llm-coverage.png" class="gallery-thumb" data-gallery="trust-llm" data-caption="Conformal coverage across domain shift — self-inconsistency violates the 0.90 target worst on TruthfulQA (0.581)"><img src="assets/thumbs/trust-llm-coverage.jpg" alt="Bar chart of conformal coverage per method across four test conditions" loading="lazy"></a>
+              <a href="assets/trust-llm-f1.png" class="gallery-thumb" data-gallery="trust-llm" data-caption="Hallucination-detection F1 with the same τ — self-inconsistency is the best detector on TruthfulQA (F1 0.826) yet nearly useless on MedMCQA"><img src="assets/thumbs/trust-llm-f1.jpg" alt="Bar chart of hallucination detection F1 per method across four test conditions" loading="lazy"></a>
+              <a href="assets/trust-llm-auroc-heatmap.png" class="gallery-thumb" data-gallery="trust-llm" data-caption="AUROC across domains — every method collapses to chance (~0.5) on MedMCQA, the signature of concept shift"><img src="assets/thumbs/trust-llm-auroc-heatmap.jpg" alt="Heatmap of AUROC for four methods across four QA datasets" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/satwik-shreshth/trust-llm-conformal-hallucination-detection" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
       </article>
 
