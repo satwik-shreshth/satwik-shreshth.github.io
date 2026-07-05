@@ -1656,7 +1656,7 @@ main { display: block; }
   50% { translate: 0 -7px; }
 }
 
-.glass-card, .cta-band, .metric {
+.glass-card, .cta-band, .metric, .highlight-card {
   background-image: linear-gradient(120deg, #ffffff 0%, #e2f6fb 48%, #ddf5ec 100%);
 }
 .about-tile, .stat-card {
@@ -1665,6 +1665,22 @@ main { display: block; }
 .float-card {
   background-image: linear-gradient(135deg, #f2fbfd 0%, #d6effb 55%, #c4f3e2 100%);
 }
+/* Marquee cards cycle through 7 hues (7 unique cards, duplicated once for
+   the seamless loop, so 7n+k colors both copies identically) */
+.float-card:nth-child(7n+1) { background-image: linear-gradient(135deg, #f0fbfe 0%, #c9eefb 55%, #b3e9f8 100%); }
+.float-card:nth-child(7n+2) { background-image: linear-gradient(135deg, #f0fdf6 0%, #c9f3dd 55%, #b0efd0 100%); }
+.float-card:nth-child(7n+3) { background-image: linear-gradient(135deg, #f5f3fe 0%, #ded9fb 55%, #ccc9f8 100%); }
+.float-card:nth-child(7n+4) { background-image: linear-gradient(135deg, #fef7f0 0%, #fbe0c9 55%, #f8d2b3 100%); }
+.float-card:nth-child(7n+5) { background-image: linear-gradient(135deg, #fef1f4 0%, #fbd4de 55%, #f8c2d1 100%); }
+.float-card:nth-child(7n+6) { background-image: linear-gradient(135deg, #fdfbec 0%, #f4ecc0 55%, #eee3a4 100%); }
+.float-card:nth-child(7n+7) { background-image: linear-gradient(135deg, #eff6fe 0%, #cfe3fb 55%, #b9d7f9 100%); }
+.float-card:nth-child(7n+1) .float-card-icon { color: #0e7490; }
+.float-card:nth-child(7n+2) .float-card-icon { color: #047857; }
+.float-card:nth-child(7n+3) .float-card-icon { color: #6d28d9; }
+.float-card:nth-child(7n+4) .float-card-icon { color: #c2410c; }
+.float-card:nth-child(7n+5) .float-card-icon { color: #be185d; }
+.float-card:nth-child(7n+6) .float-card-icon { color: #a16207; }
+.float-card:nth-child(7n+7) .float-card-icon { color: #1d4ed8; }
 .project-card {
   background-image: linear-gradient(135deg, #f4fdfb 0%, #cbeff8 50%, #c9f2e0 100%);
 }
@@ -1686,24 +1702,26 @@ main { display: block; }
 
 .glass-card, .cta-band, .metric, .about-tile, .stat-card, .float-card,
 .project-card, .research-card, .skill-card, .timeline-card,
-.achievement-card, .contact-card, .social-link {
+.achievement-card, .contact-card, .social-link, .highlight-card {
   background-size: 240% 240%;
   animation: gradientPan 14s ease-in-out infinite;
 }
 
 /* Floating cards; translate composes with the transform hover effects above */
 .about-tile, .stat-card, .float-card, .project-card, .skill-card,
-.achievement-card, .timeline-card, .contact-card, .social-link {
+.achievement-card, .timeline-card, .contact-card, .social-link,
+.highlight-card, .glass-card {
   animation: gradientPan 14s ease-in-out infinite, cardFloat 6.5s ease-in-out infinite;
 }
 .about-tile:nth-child(2n), .stat-card:nth-child(2n), .float-card:nth-child(2n),
 .project-card:nth-child(2n), .skill-card:nth-child(2n), .achievement-card:nth-child(2n),
 .timeline-item:nth-child(2n) .timeline-card, .contact-card:nth-child(2n),
-.social-link:nth-child(2n) {
+.social-link:nth-child(2n), .highlight-card:nth-child(2n) {
   animation-delay: -4.7s, -2.2s;
 }
 .about-tile:nth-child(3n), .float-card:nth-child(3n), .project-card:nth-child(3n),
-.skill-card:nth-child(3n), .achievement-card:nth-child(3n), .social-link:nth-child(3n) {
+.skill-card:nth-child(3n), .achievement-card:nth-child(3n), .social-link:nth-child(3n),
+.highlight-card:nth-child(3n) {
   animation-delay: -9.3s, -4.4s;
 }
 
@@ -1764,7 +1782,8 @@ main { display: block; }
 
   /* Perf: drop the per-card vertical float, keep the gradient pan */
   .about-tile, .stat-card, .float-card, .project-card, .skill-card,
-  .achievement-card, .timeline-card, .contact-card, .social-link {
+  .achievement-card, .timeline-card, .contact-card, .social-link,
+  .highlight-card, .glass-card {
     animation: gradientPan 18s ease-in-out infinite;
   }
 }
