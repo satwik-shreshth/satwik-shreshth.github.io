@@ -356,6 +356,7 @@ main { display: block; }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh; /* stable on mobile: ignores the collapsing URL bar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,6 +704,10 @@ main { display: block; }
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 22px;
 }
+/* Let cards shrink below their content's min-width so inner
+   scroll wrappers (data tables) can actually scroll on phones */
+.projects-grid > * { min-width: 0; }
+.research-columns > * { min-width: 0; }
 
 .project-card {
   display: flex;
@@ -1134,6 +1139,7 @@ main { display: block; }
 /* ---------- Data tables ---------- */
 .data-table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.65);
@@ -1720,6 +1726,47 @@ main { display: block; }
   .hero-photo-wrap { width: 124px; height: 124px; }
   .timeline { padding-left: 28px; }
   .timeline-dot { left: -28px; }
+
+  /* Hero: lighter background effects, tidy 2-up action buttons */
+  .hero { padding: calc(var(--nav-h) + 32px) 18px 48px; }
+  .orb { filter: blur(56px); opacity: 0.38; }
+  .orb-1 { width: 260px; height: 260px; }
+  .orb-2 { width: 220px; height: 220px; }
+  .orb-3 { width: 160px; height: 160px; }
+  .hero-actions { gap: 10px; }
+  .hero-actions .btn { flex: 1 1 calc(50% - 10px); justify-content: center; }
+
+  /* Project cards: tighter padding, 2x2 metrics, larger tap targets */
+  .project-body { padding: 18px; gap: 11px; }
+  .project-visual.chart, .project-visual.photo { height: 168px; }
+  .project-metrics { grid-template-columns: repeat(2, 1fr); }
+  .gallery-strip,
+  .research-card .gallery-strip { grid-template-columns: repeat(3, 1fr); }
+  .gallery-thumb,
+  .research-card .gallery-thumb { height: 76px; }
+  .highlight-card .gallery-thumb { height: 168px; }
+
+  /* Data tables and embedded CV: fit small screens */
+  .data-table { font-size: 0.72rem; }
+  .cv-frame iframe { height: 68vh; }
+
+  /* Marquee cards: slightly narrower so a full card + peek fits the screen */
+  .float-card { width: 232px; height: 150px; padding: 15px; }
+
+  /* Lightbox: smaller controls, room for the caption and counter */
+  .lightbox { padding: 2vh 2vw; }
+  .lightbox-figure img { max-height: 64vh; padding: 5px; }
+  .lightbox-caption { font-size: 0.78rem; padding: 0 40px; }
+  .lightbox-btn { width: 38px; height: 38px; font-size: 0.9rem; }
+  .lightbox-close { top: 12px; right: 12px; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+
+  /* Perf: drop the per-card vertical float, keep the gradient pan */
+  .about-tile, .stat-card, .float-card, .project-card, .skill-card,
+  .achievement-card, .timeline-card, .contact-card, .social-link {
+    animation: gradientPan 18s ease-in-out infinite;
+  }
 }
 
 /* ---------- Reduced motion ---------- */
