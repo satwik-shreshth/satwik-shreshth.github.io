@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://satwik-shreshth.github.io/sitemap.xml
