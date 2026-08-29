@@ -119,49 +119,7 @@
       }
     }
 
-    /* ---------- Animated stat counters ---------- */
-    var statNumbers = document.querySelectorAll('.stat-number[data-target]');
-    function animateCounter(el) {
-      var target = parseInt(el.getAttribute('data-target'), 10);
-      var suffix = el.getAttribute('data-suffix') || '';
-      var display = el.getAttribute('data-display');
-      var duration = 1300;
-      var startTime = null;
-
-      function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
-      function format(n) {
-        if (target >= 10000 && n >= 1000) {
-          var k = n / 1000;
-          return (k === Math.floor(k) ? Math.floor(k) : k.toFixed(1)) + 'K' + suffix;
-        }
-        return n + suffix;
-      }
-      function step(ts) {
-        if (!startTime) startTime = ts;
-        var progress = Math.min((ts - startTime) / duration, 1);
-        el.textContent = format(Math.floor(easeOutQuart(progress) * target));
-        if (progress < 1) requestAnimationFrame(step);
-        else el.textContent = display || (target >= 10000 ? format(target) : target + suffix);
-      }
-      requestAnimationFrame(step);
-    }
-    if (statNumbers.length) {
-      if (reduceMotion || !('IntersectionObserver' in window)) {
-        statNumbers.forEach(function (el) {
-          el.textContent = el.getAttribute('data-display') || (el.getAttribute('data-target') + (el.getAttribute('data-suffix') || ''));
-        });
-      } else {
-        var statsObserver = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              animateCounter(entry.target);
-              statsObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.3 });
-        statNumbers.forEach(function (el) { statsObserver.observe(el); });
-      }
-    }
+    /* ---------- Stat counters (static display) ---------- */
 
     /* ---------- Project filters ---------- */
     var projectFilters = document.getElementById('projectFilters');
